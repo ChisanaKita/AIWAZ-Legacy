@@ -15,7 +15,7 @@ if (!command) {
 console.log(`
     >Message Event<
 Command (${command}) Trigger.
-At : ${n}
+At : ${n} US TIME
 By : ${message.author.username}
 From : ${message.guild.name}`);
 
@@ -27,7 +27,7 @@ From : ${message.guild.name}`);
 // };
 
 	try {
-		guild.channels.find('name', 'aiw-log').send(`Command : ( ${command} ) Trigger \n${n}, ${message.author.username}`);
+		guild.channels.find('name', 'aiw-log').send(`Command : ( ${command} ) Trigger \n${n} US TIME,\n${message.author.username}`);
 		let cmdFile = require(`../commands/${command}`);
 		cmdFile.run(client, message, args);
 	} catch (error) {
