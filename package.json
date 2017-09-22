@@ -1,0 +1,24 @@
+{
+  "name": "AIwaz",
+  "version": "0.12.8",
+  "description": "XAT_AIwaz",
+  "main": "bot.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "author": "XiaoBei",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.1.0",
+    "eris": "^0.7.0",
+    "ffmpeg-binaries": "^3.2.2-3",
+    "node-osu": "^1.2.0",
+    "osunext-sig": "^1.0.3",
+    "reaction-menu": "^1.0.6",
+    "uws": "^8.14.0",
+    "ytdl": "^0.7.0"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^3.0.1"
+  }
+}
