@@ -23,4 +23,4 @@ var reload = (message, cmd) => {
 exports.reload = reload;
 
 
-client.login("MzQ3NzgyMTY2ODExMzc3NjY3.DHdZBA.UthInyT9rN38EuwCnngenJpmYz4");
+client.login("IFUCKYOUMONANDYOURSISTERANDYOURDOGANGYOURCAT");
