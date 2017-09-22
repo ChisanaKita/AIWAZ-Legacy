@@ -13,16 +13,16 @@ At : ${d}
 From : ${member.guild.name}`);
 //---------------------------------------------------------------------------------for other server
 if (guild.id != '191539621119655936') {
-	guild.channels.find('type', 'text').send(`Welcome ${member.user.username} Joined Our Server.\nUse Command \`/help\` To Open The Help List`);
-	return;
+ guild.channels.find('type', 'text').send(`Welcome ${member.user.username} Joined Our Server.\nUse Command \`/help\` To Open The Help List`);
+ return;
 }
 //------------------------------------------------------------------------------add r1 (first role)
 var r1 = guild.roles.find("name", "科學");
 //------------------------------------------------------------------------------random num function
-	function GetRandomInt(MinInt, MaxInt) {
-		var x = Math.floor((Math.random() * MaxInt) + MinInt);
-		return x;
-	}
+ function GetRandomInt(MinInt, MaxInt) {
+  var x = Math.floor((Math.random() * MaxInt) + MinInt);
+  return x;
+ }
 //-----------------------------------------------------------------------------random gen r2 and r3
 	var RandomInt = GetRandomInt(1, 38);
 	var SRandomInt = GetRandomInt(1, 4);
@@ -121,21 +121,21 @@ var r1 = guild.roles.find("name", "科學");
 						case 38 :			var r3 = guild.roles.find("name", ArraySkill[37]);break;
 					};
 //-----------------------------------------------------------all result process and welcome message
-		if(!(r2 == guild.roles.find("name", ArrayLevel[0]))){
-			member.addRole(r1).then(member.addRole(r2)).then(member.addRole(r3));
+if(!(r2 == guild.roles.find("name", ArrayLevel[0]))){
+	member.addRole(r1).then(member.addRole(r2)).then(member.addRole(r3));
 
-			guild.channels.find('type', 'text').send(`🔊  Welcome \*\*${member.user.username}\*\* ( ${r2.name} ) Joined Our Server.\n🔸  Your Skill is : \`${r3.name}\` ${r3}
-			\*\*\_\_                                                                              ⚠️Warning⚠️                                                                              \_\_\*\*
-			Please Follow The \*\*NAMO Protocol (Revised) Regulations\*\* Or You Will Get Kick By <@347782166811377667>\n
-			\n                                                       🔸🔹🔸\*\*\_\_   (NAMO Protocol [1.5])   \_\_\*\*🔸🔹🔸\n                                                     Use Command : /register To Register Your Identity`);
-		} else {
-			member.addRole(r1).then(member.addRole(r2));
+	guild.channels.find('type', 'text').send(`🔊  Welcome \*\*${member.user.username}\*\* ( ${r2.name} ) Joined Our Server.\n🔸  Your Skill is : \`${r3.name}\` ${r3}
+	\*\*\_\_                                                                              ⚠️Warning⚠️                                                                              \_\_\*\*
+	Please Follow The \*\*NAMO Protocol (Revised) Regulations\*\* Or You Will Get Kick By <@347782166811377667>\n
+	\n                                                       🔸🔹🔸\*\*\_\_   (NAMO Protocol [1.5])   \_\_\*\*🔸🔹🔸\n                                                     Use Command : /register To Register Your Identity`);
+} else {
+	member.addRole(r1).then(member.addRole(r2));
 
-			guild.channels.find('type', 'text').send(`🔊  Welcome \*\*${member.user.username}\*\* ( ${r2.name} ) Joined Our Server.\n🔸  Your Skill is : \`NULL\`
-			\*\*\_\_                                                                              ⚠️Warning⚠️                                                                              \_\_\*\*
-			Please Follow The \*\*NAMO Protocol (Revised) Regulations\*\* Or You Will Get Kick By <@347782166811377667>\n
-			\n                                                       🔸🔹🔸\*\*\_\_   (NAMO Protocol [1.5])   \_\_\*\*🔸🔹🔸\n                                                     Use Command : /register To Register Your Identity`);
-		} //⚠️
+	guild.channels.find('type', 'text').send(`🔊  Welcome \*\*${member.user.username}\*\* ( ${r2.name} ) Joined Our Server.\n🔸  Your Skill is : \`NULL\`
+	\*\*\_\_                                                                              ⚠️Warning⚠️                                                                              \_\_\*\*
+	Please Follow The \*\*NAMO Protocol (Revised) Regulations\*\* Or You Will Get Kick By <@347782166811377667>\n
+	\n                                                       🔸🔹🔸\*\*\_\_   (NAMO Protocol [1.5])   \_\_\*\*🔸🔹🔸\n                                                     Use Command : /register To Register Your Identity`);
+}
 //-------------------------------------------------------------------send message to MISAKA-NETWORK
 	ser.channels.get('347618456335548427').send({embed: {
 	color: 10158080,
