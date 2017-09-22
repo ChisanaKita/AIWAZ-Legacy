@@ -23,4 +23,4 @@ var reload = (message, cmd) => {
 exports.reload = reload;
 
 
-client.login("IFUCKYOUMONANDYOURSISTERANDYOURDOGANGYOURCAT");
+client.login(process.env.BOT.TOKEN);
