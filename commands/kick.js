@@ -4,7 +4,7 @@ exports.run = (client, message, args) => {
   message.delete();
 
   let ser = client.guilds.find("name", "個人的現實");                            //The server that i want to send a log message.
-  let resone = args.shift().slice(args[0].length);                              //The resone of why the user been kick.
+  let resone = args.shift().slice('19');                                        //The resone of why the user been kick.
   let user = message.mentions.users.first();                                    //The user that the sender want to kick.
   let x = message.author;                                                       //The sender
   let permission1 = message.guild.member(user).kickable;                        //Check is or isn't the user is kickable from the sender.
