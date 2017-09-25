@@ -1,4 +1,4 @@
-# AIwaz ( 0.12.0 )
+# AIwaz ( 0.12.0 ) (Support BOT for NANO<3 BOT)
 - Add: register Command
 - Add: external processing file : processC.js
 > note : 現在可以用command /register 定義自己的身份(學生). 如不選擇進行登記, 將無法存取部分校園區.
