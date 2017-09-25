@@ -3,14 +3,11 @@ const version = require('../package.json').version;
 module.exports = message => {
 	if (!message.content.startsWith(prefix)) return;
 	if (message.author.bot) return;
-	let d = new Date();
-	var HK_Offset = 8 * 60;
+	let d = new Date().toLocaleString();
 	const client = message.client;
 	let args = message.content.split(' ');
 	const command = args.shift().slice(prefix.length);
 	const guild = client.guilds.find("name", "個人的現實");
-	d.setMinutes(d.getMinutes() + HK_Offset);
-	
 if (!command) {
 	return;
 }
@@ -18,7 +15,7 @@ if (!command) {
 console.log(`
     >Message Event<
 Command (${command}) Trigger.
-At : ${d.toLocaleString()} US TIME
+At : ${d} US TIME
 By : ${message.author.username}
 From : ${message.guild.name}`);
 
@@ -30,7 +27,7 @@ From : ${message.guild.name}`);
 // };
 
 	try {
-		guild.channels.find('name', 'aiw-log').send(`Command : ( ${command} ) Trigger \n${d.toLocaleString()},\n${message.author.username}`);
+		guild.channels.find('name', 'aiw-log').send(`Command : ( ${command} ) Trigger \n${d},\n${message.author.username}`);
 		let cmdFile = require(`../commands/${command}`);
 		cmdFile.run(client, message, args);
 	} catch (error) {
@@ -38,7 +35,7 @@ From : ${message.guild.name}`);
 			message.channel.send('⚠️Error : ' + error.message).then(response => response.delete(5000));
 			 client.channels.get('347618456335548427').send({embed: {
 			 	color: 10158080,
-			 	description: '\`' + '------ 御坂網絡  ' + version + ' ------' + '\`\n' + 'Failed Execute Command : ' + command + `\nInput By : ` + message.author.username + '\nAt : ' + d.toLocaleString() + '\nFrom : ' + message.guild  + '\n\`\`\`js\n' + error.stack + '\`\`\`'
+			 	description: '\`' + '------ 御坂網絡  ' + version + ' ------' + '\`\n' + 'Failed Execute Command : ' + command + `\nInput By : ` + message.author.username + '\nAt : ' + d + '\nFrom : ' + message.guild  + '\n\`\`\`js\n' + error.stack + '\`\`\`'
 			 }});
 		}
 
