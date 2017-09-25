@@ -22,11 +22,12 @@ Logic gate of the user permission
     }
   }
 
-  let d = client.readyAt;                  //The time when the bot is ready. (Online)
-  let n = d.toLocaleString();              //Conver the date format to your locale string.
-  let ut = client.uptime;                  //The bot total up time.
-  let time = Math.ceil((ut / 1000) / 60);  //Conver the up time to Minute(s).
-  let unit;                                //The time unit. (Minutes and Hours)
+  let d = client.readyAt;                   //The time when the bot is ready. (Online)
+	var HK_Offset = 8 * 60;                   //HK Time zone.
+	d.setMinutes(d.getMinutes() + HK_Offset); //Conver To +8 Time zone.
+  let ut = client.uptime;                   //The bot total up time.
+  let time = Math.ceil((ut / 1000) / 60);   //Conver the up time to Minute(s).
+  let unit;                                 //The time unit. (Minutes and Hours)
 
 //Logic Gate for changing the Minute to Hour If the time pass 60 Minutes.
   if (time >= '60') {
@@ -40,7 +41,7 @@ Logic gate of the user permission
   let embed = new Discord.RichEmbed()
       .setAuthor("🔷(-AIwaz Status Manual-)🔷")
       .setColor("#33ccff")
-      .setDescription("Start At :" +'\`'+ n +'\`')
+      .setDescription("Start At :" +'\`'+ d.toLocaleString() +'\`')
       .addField("Up Time", "Up Time : " + '\`' + time + '\`' + unit, true)
       .addField("Ping", '\`' + Math.ceil(client.ping) + '\`' + "ms", true)
       .setThumbnail("https://i.imgur.com/Fta2jMg.jpg")
