@@ -18,7 +18,7 @@ if (!command) {
 console.log(`
     >Message Event<
 Command (${command}) Trigger.
-At : ${d.toLocaleString()} US TIME
+At : ${d.toLocaleString()} HK Time
 By : ${message.author.username}
 From : ${message.guild.name}`);
 
