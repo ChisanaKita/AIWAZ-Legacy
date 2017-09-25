@@ -12,9 +12,8 @@
     "discord.js": "^11.1.0",
     "eris": "^0.7.0",
     "ffmpeg-binaries": "^3.2.2-3",
+    "rem": "^7.0-3",
     "node-osu": "^1.2.0",
-    "osunext-sig": "^1.0.3",
-    "reaction-menu": "^1.0.6",
     "uws": "^8.14.0",
     "ytdl": "^0.7.0"
   },
