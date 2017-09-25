@@ -4,7 +4,7 @@
   "description": "XAT_AIwaz",
   "main": "bot.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "test": ""
   },
   "author": "XiaoBei",
   "license": "MIT",
