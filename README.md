@@ -1,3 +1,2 @@
-# AIWAZ
-S.Y.S.T.E.M
+# AIwaz ( 0.12.8 )
 THIS IS MY FIRST DISCORD BOT
