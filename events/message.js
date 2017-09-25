@@ -22,13 +22,6 @@ At : ${d.toLocaleString()} HK Time
 By : ${message.author.username}
 From : ${message.guild.name}`);
 
-//if (client.user.presence['status'] == 'dnd' && message.author.id !== '179443176279375872') return;
-// if (message.channel.name !== 'game-center' && message.content == ("/coin")) {
-// 	message.delete();
-// 	message.channel.send('Please Go To <#351250503306444800> And Try Again').then(response => response.delete(5000));
-// 	return;
-// };
-
 	try {
 		guild.channels.find('name', 'aiw-log').send(`Command : ( ${command} ) Trigger \n${d.toLocaleString()},\n${message.author.username}`);
 		let cmdFile = require(`../commands/${command}`);
