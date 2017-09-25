@@ -14,7 +14,6 @@
     "ffmpeg-binaries": "^3.2.2-3",
     "rem": "^7.0-3",
     "node-osu": "^1.2.0",
-    "uws": "^8.14.0",
     "ytdl": "^0.7.0"
   },
   "optionalDependencies": {
