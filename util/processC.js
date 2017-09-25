@@ -1,5 +1,4 @@
 const version = require('../package.json').version;
-const d = new Date().toLocaleString();
 var processC = (client, message, num) => {
  let guild = message.guild;
  let u = guild.member(message.author);
