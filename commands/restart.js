@@ -23,10 +23,11 @@ exports.run = (client, message, args) => {
 
   setTimeout(function () {
     var d = new Date();
-    var n = d.toLocaleString();
+    var HK_Offset = 8 * 60;
+	  d.setMinutes(d.getMinutes() + HK_Offset);
     message.channel.send({embed: {
       color: 15597568,
-      description: 'At : ' + '\`' + n + '\`' + ' S.Y.S.T.E.M. Successfully Restarted..'
+      description: 'At : ' + '\`' + d.toLocaleString() + '\`' + ' S.Y.S.T.E.M. Successfully Restarted..'
     }});
   },13150);
 }
