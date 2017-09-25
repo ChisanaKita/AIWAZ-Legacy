@@ -48,7 +48,7 @@ if (time >= '60') {
   let embed = new Discord.RichEmbed()
       .setAuthor("🔷(-AIwaz Status Manual-)🔷")
       .setColor("#33ccff")
-      .setDescription("Start At :" +'\`'+ d.toLocaleString() +'\`')
+      .setDescription("Start At :" +'\`'+ HKtime() +'\`')
       .addField("Up Time", "Up Time : " + '\`' + time + '\`' + unit, true)
       .addField("Ping", '\`' + Math.ceil(client.ping) + '\`' + "ms", true)
       .setThumbnail("https://i.imgur.com/Fta2jMg.jpg")
