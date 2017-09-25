@@ -22,20 +22,27 @@ Logic gate of the user permission
     }
   }
 
-  let d = client.readyAt;                   //The time when the bot is ready. (Online)
-	var HK_Offset = 8 * 60;                   //HK Time zone.
-	d.setMinutes(d.getMinutes() + HK_Offset); //Conver To +8 Time zone.
+  let ready_At = client.readyAt;            //The time when the bot is ready. (Online)
   let ut = client.uptime;                   //The bot total up time.
   let time = Math.ceil((ut / 1000) / 60);   //Conver the up time to Minute(s).
-  let unit;                                 //The time unit. (Minutes and Hours)
+  let unit;
+
+//For Isolation the setMinutes BiF to don't effect other time object.
+function HKtime(){
+  let d = client.readyAt;
+  let HK_Offset = 8 * 60;
+    d.setMinutes(d.getMinutes() + HK_Offset);
+  return d.toLocaleString();
+}
 
 //Logic Gate for changing the Minute to Hour If the time pass 60 Minutes.
-  if (time >= '60') {
-    time = Math.ceil(((ut / 1000) / 60) / 60);
-    unit = 'Hour(s)';
-  } else {
-    unit = 'Minute(s)';
-  }
+if (time >= '60') {
+  time = Math.ceil(((ut / 1000) / 60) / 60);
+  unit = 'Hour(s)';
+} else {
+  unit = 'Minute(s)';
+}
+
 
 //SUM the result and send it
   let embed = new Discord.RichEmbed()
