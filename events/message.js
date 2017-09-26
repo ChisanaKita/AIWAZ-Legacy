@@ -1,8 +1,8 @@
 const prefix = "/"
 const version = require('../package.json').version;
 const moment = require('moment-timezone');
-const d = new Date();
 module.exports = message => {
+	var d = new Date();
 	if (!message.content.startsWith(prefix)) return;
 	if (message.author.bot) return;
 	const client = message.client;
