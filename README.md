@@ -5,10 +5,11 @@
 - Add : user reaction button panel
 - Add : processC.js for process and execute the command
 - Add : experimental client event remove function
-- Fix: Guild Event
-> guild.defaultChannel.send();  => guild.channels.find("type", "text").send();
-- Fix: some bug
 - Add: logic gate to block user keep using command /register.
 - Add: clean command to clean the bot message.
 - Change: Time object. (Now Able To Conver Time To HK Time Zone)
+## Update To Discord.js@11.2.0
+- Fix: Guild Event
+> guild.defaultChannel.send();  => guild.channels.find("type", "text").send();
+- Fix: some bug
 - Delete: unnecessary File(s)
