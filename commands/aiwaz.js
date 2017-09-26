@@ -1,5 +1,7 @@
 const Discord = require('discord.js');  //for embed
 const version = require('../package.json').version; //for embed
+const moment = require('moment-timezone');
+const d = new Date();
 exports.run = (client, message, args) => {
   message.delete();
 
@@ -27,12 +29,10 @@ Logic gate of the user permission
   let time = Math.ceil((ut / 1000) / 60);   //Conver the up time to Minute(s).
   let unit;
 
-//For Isolation the setMinutes BiF to don't effect other time object.
-function HKtime(){
-  let d = client.readyAt;
-  let HK_Offset = 8 * 60;
-    d.setMinutes(d.getMinutes() + HK_Offset);
-  return d.toLocaleString();
+//Converting Whatever The Local Time zone Is To HK Time zone.
+function toTimeZone(d, zone) {
+    var format = 'YYYY/MM/DD HH:mm:ss';
+    return moment(d, format).tz(zone).format(format);
 }
 
 //Logic Gate for changing the Minute to Hour If the time pass 60 Minutes.
@@ -48,7 +48,7 @@ if (time >= '60') {
   let embed = new Discord.RichEmbed()
       .setAuthor("🔷(-AIwaz Status Manual-)🔷")
       .setColor("#33ccff")
-      .setDescription("Start At :" +'\`'+ HKtime() +'\`')
+      .setDescription("Start At :" +'\`'+ toTimeZone(d, "Asia/Hong_Kong") +'\`')
       .addField("Up Time", "Up Time : " + '\`' + time + '\`' + unit, true)
       .addField("Ping", '\`' + Math.ceil(client.ping) + '\`' + "ms", true)
       .setThumbnail("https://i.imgur.com/Fta2jMg.jpg")
