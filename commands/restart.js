@@ -1,4 +1,6 @@
 const version = require('../package.json').version;
+const moment = require('moment-timezone');
+const d = new Date();
 exports.run = (client, message, args) => {
   message.delete();
 
@@ -22,12 +24,15 @@ exports.run = (client, message, args) => {
   },11100);
 
   setTimeout(function () {
-    var d = new Date();
-    var HK_Offset = 8 * 60;
-	  d.setMinutes(d.getMinutes() + HK_Offset);
     message.channel.send({embed: {
       color: 15597568,
-      description: 'At : ' + '\`' + d.toLocaleString() + '\`' + ' S.Y.S.T.E.M. Successfully Restarted..'
+      description: 'At : ' + '\`' + toTimeZone(d, "Asia/Hong_Kong") + '\`' + ' S.Y.S.T.E.M. Successfully Restarted..'
     }});
   },13150);
+
+function toTimeZone(d, zone) {
+    var format = 'YYYY/MM/DD HH:mm:ss';
+    return moment(d, format).tz(zone).format(format);
+}
+
 }
