@@ -1,16 +1,14 @@
 const prefix = "/"
 const version = require('../package.json').version;
 const moment = require('moment-timezone');
+const d = new Date();
 module.exports = message => {
 	if (!message.content.startsWith(prefix)) return;
 	if (message.author.bot) return;
-	let d = new Date();
-	var HK_Offset = 8 * 60;
 	const client = message.client;
 	let args = message.content.split(' ');
 	const command = args.shift().slice(prefix.length);
 	const guild = client.guilds.find("name", "個人的現實");
-	d.setMinutes(d.getMinutes() + HK_Offset);
 	
 if (!command) {
 	return;
