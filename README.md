@@ -13,7 +13,7 @@
 > guild.defaultChannel.send();  => guild.channels.find("type", "text").send();
 - Fix: Some Bug
 - Delete: Unnecessary File(s)
-## Hosting On Heroku (2017/9/24)
+## UPDATE VERSION TO ( 0.12.9 ) | Hosting On Heroku (2017/9/24)
 - Change: Time Object. (Now Able To Conver Time To HK Time Zone)
 ## UPDATE VERSION TO ( 0.12.10 ) | Install moment-timezone@0.5.13 (2017/9/26)
 - Fix: Time zone Problem.
