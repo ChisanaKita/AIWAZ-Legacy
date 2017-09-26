@@ -1,9 +1,9 @@
 const Discord = require('discord.js');  //for embed
 const version = require('../package.json').version; //for embed
 const moment = require('moment-timezone');
-const d = new Date();
 exports.run = (client, message, args) => {
   message.delete();
+  var d = new Date();
 
 //permission module
   let guild = message.guild;  //define Guild
