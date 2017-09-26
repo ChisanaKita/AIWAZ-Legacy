@@ -1,8 +1,8 @@
 const version = require('../package.json').version;
 const moment = require('moment-timezone');
-const d = new Date();
 exports.run = (client, message, args) => {
   message.delete();
+  var d = new Date();
 
   message.channel.send('\`S.Y.S.T.E.M. Shutting Down.....\`').then(response => response.delete(1000));
 
