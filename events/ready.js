@@ -1,8 +1,8 @@
 const version = require('../package.json').version;
 const fs = require('fs');
-const d = new Date();
 const moment = require('moment-timezone');
 module.exports = client => {
+  var d = new Date();
   var ser = client.guilds.find("name", "個人的現實");
 
   console.log(`I\`m Online at : ${toTimeZone(d, "Asia/Hong_Kong")} \n AIwaz 御坂網絡 : ${version}`);
