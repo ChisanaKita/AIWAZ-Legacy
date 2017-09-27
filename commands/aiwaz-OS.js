@@ -35,11 +35,13 @@ Logic gate of the user permission
   let g = os.endianness();    //
   let h = os.platform();      //host pc os platform
 
-//change the incoming info to the string you want. (in this case I change 'win32' to 'Windows 10' and 'darwin' to 'MacOS')
+//change the incoming info to the string you want. (in this case I change 'win32' to 'Windows 10' and 'darwin' to 'MacOS', etc.....)
   if (h == 'win32') {
     var q = 'Windows 10 ';
   } else if (h == 'darwin') {
     var q = 'MacOS ';
+  } else if (h == 'linux') {
+    var q = 'Linux ';
   }
 
 //SUM the result and send it
