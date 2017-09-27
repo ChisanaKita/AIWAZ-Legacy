@@ -4,10 +4,11 @@ const moment = require('moment-timezone');
 exports.run = (client, message, args) => {
   message.delete();
   var d = new Date();
+  const ready_At = client.readyAt;          //The time when the bot is ready. (Online)
 
 //permission module
-  let guild = message.guild;  //define Guild
-  let me = message.author;    //define me (message sender)
+  let guild = message.guild;                                            //define Guild
+  let me = message.author;                                              //define me (message sender)
   let permission = guild.member(me).permissions.has("ADMINISTRATOR");   //check the user rither or not have the permission
 
 /*
@@ -24,7 +25,6 @@ Logic gate of the user permission
     }
   }
 
-  let ready_At = client.readyAt;            //The time when the bot is ready. (Online)
   let ut = client.uptime;                   //The bot total up time.
   let time = Math.ceil((ut / 1000) / 60);   //Conver the up time to Minute(s).
   let unit;
@@ -33,7 +33,7 @@ Logic gate of the user permission
 function toTimeZone(d, zone) {
     var format = 'YYYY/MM/DD HH:mm:ss';
     return moment(d, format).tz(zone).format(format);
-}
+};
 
 //Logic Gate for changing the Minute to Hour If the time pass 60 Minutes.
 if (time >= '60') {
@@ -42,7 +42,6 @@ if (time >= '60') {
 } else {
   unit = 'Minute(s)';
 }
-
 
 //SUM the result and send it
   let embed = new Discord.RichEmbed()
