@@ -20,3 +20,4 @@
 > Due to the .setMinutes method is not reliable (Will interact with other time object), So use "moment-timezone" instead.
 - Change: All Time Object Using "moment-timezone" To Convert to HK Local Time
 - Fix: Time Object Callback Stuck
+- Fix: `client.readyAt` Function Callback Not Correct (2017/9/27)
