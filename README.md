@@ -1,4 +1,4 @@
-# DRAGON·Project エイワズ(AIwaz) Angels of Science
+# DRAGON·Project エイワズ(AIwaz) Angel of Science
 > Magic Side [Index-Project](https://github.com/STARLITENAMO/Index-Project)
 ## UPDATE VERSION TO ( 0.12.0 ) | Update To Discord.js@11.2.0 (2017/9/18)
 - Add: Register Command
