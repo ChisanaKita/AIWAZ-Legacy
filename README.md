@@ -2,7 +2,7 @@
 ## UPDATE VERSION TO ( 0.12.0 ) | Update To Discord.js@11.2.0 (2017/9/18)
 - Add: Register Command
 - Add: External Processing File : processC.js
-(現在可以用command /register 定義自己的身份(學生). 如不選擇進行登記, 將無法存取部分校園區.)
+\n(現在可以用command /register 定義自己的身份(學生). 如不選擇進行登記, 將無法存取部分校園區.)
 - Add : User Reaction Panel
 - Add : processC.js For Process And Execute The Command
 - Add : Experimental Client Event Remove Function
