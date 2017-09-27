@@ -7,7 +7,7 @@
 - Add : processC.js For Process And Execute The Command
 - Add : Experimental Client Event Remove Function
 - Add: Logic Gate To Block User Spamming The Register Command.
-- Add: Clean Command To Clean The Bot Messages.
+- Add: Clean Command To Clean The BOT Messages.
 ## UPDATE VERSION TO ( 0.12.8 ) | Update To Discord.js@11.2.0 (2017/9/20)
 - Fix: Guild Event  `guild.defaultChannel.send();  => guild.channels.find("type", "text").send();`
 - Fix: Syntax Error
