@@ -29,9 +29,9 @@ Logic gate of the user permission
   let unit;
 
 //Converting Whatever The Local Time zone Is To HK Time zone.
-function toTimeZone(d, zone) {
+function toTimeZone(ready_At, zone) {
     var format = 'YYYY/MM/DD HH:mm:ss';
-    return moment(d, format).tz(zone).format(format);
+    return moment(ready_At, format).tz(zone).format(format);
 };
 
 //Logic Gate for changing the Minute to Hour If the time pass 60 Minutes.
