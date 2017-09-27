@@ -11,7 +11,7 @@
 ## UPDATE VERSION TO ( 0.12.8 ) | Update To Discord.js@11.2.0 (2017/9/20)
 - Fix: Guild Event
 > guild.defaultChannel.send();  => guild.channels.find("type", "text").send();
-- Fix: A Few General Bug
+- Fix: Syntax Error
 - Delete: Unnecessary File(s)
 ## UPDATE VERSION TO ( 0.12.9 ) | Hosting On Heroku (2017/9/24)
 - Change: Time Object. (Now Able To Conver Time To HK Time Zone)
@@ -21,3 +21,4 @@
 - Change: All Time Object Using "moment-timezone" To Convert to HK Local Time
 - Fix: Time Object Callback Stuck
 - Fix: `client.readyAt` Function Callback Not Correct (2017/9/27)
+- Fix: Reference Error
