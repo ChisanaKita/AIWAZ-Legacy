@@ -15,7 +15,7 @@
 ## UPDATE VERSION TO ( 0.12.9 ) | Hosting On Heroku (2017/9/24)
 - Change: Time Object. (Now Able To Conver Time To HK Time Zone)
 ## UPDATE VERSION TO ( 0.12.10 ) | Install moment-timezone@0.5.13 (2017/9/26)
-- Fix: Time zone Problem.
+- Fix: Time zone Problem. <br>
 `Due to the .setMinutes method is not reliable (Will interact with other time object), So use "moment-timezone" instead.`
 - Change: All Time Object Using "moment-timezone" To Convert to HK Local Time
 - Fix: Time Object Callback Stuck
