@@ -131,16 +131,18 @@ if(!(r2 == guild.roles.find("name", ArrayLevel[0]))){
 	member.addRole(r1).then(member.addRole(r2)).then(member.addRole(r3));
 
 	guild.channels.find('type', 'text').send(`🔊  Welcome \*\*${member.user.username}\*\* ( ${r2.name} ) Joined Our Server.\n🔸  Your Skill is : \`${r3.name}\` ${r3}
-	\*\*\_\_                                                                              ⚠️Warning⚠️                                                                               \_\_\*\*
+	\*\*\_\_                                                                              ⚠️Warning⚠️                                                                             \_\_\*\*
 	Please Follow The \*\*NAMO Protocol (Revised) Regulations\*\* Or You Will Get Kick By <@347782166811377667>\n
-	\n                                                        🔸🔹🔸\*\*\_\_   (NAMO Protocol [1.5])   \_\_\*\*🔸🔹🔸\n                                                      Use Command : /register To Register Your Identity`);
+	\n                                                 🔸🔹🔸\*\*\_\_   (NAMO Protocol [1.5])   \_\_\*\*🔸🔹🔸\n                                               Use Command : /register To Register Your Identity
+\`                                       If you do not choose to register, you will not be able to access some of the campus area.\``);
 } else {
 	member.addRole(r1).then(member.addRole(r2));
 
 	guild.channels.find('type', 'text').send(`🔊  Welcome \*\*${member.user.username}\*\* ( ${r2.name} ) Joined Our Server.\n🔸  Your Skill is : \`NULL\`
-	\*\*\_\_                                                                              ⚠️Warning⚠️                                                                               \_\_\*\*
+	\*\*\_\_                                                                              ⚠️Warning⚠️                                                                             \_\_\*\*
 	Please Follow The \*\*NAMO Protocol (Revised) Regulations\*\* Or You Will Get Kick By <@347782166811377667>\n
-	\n                                                        🔸🔹🔸\*\*\_\_   (NAMO Protocol [1.5])   \_\_\*\*🔸🔹🔸\n                                                      Use Command : /register To Register Your Identity`);
+	\n                                                 🔸🔹🔸\*\*\_\_   (NAMO Protocol [1.5])   \_\_\*\*🔸🔹🔸\n                                               Use Command : /register To Register Your Identity
+\`                                       If you do not choose to register, you will not be able to access some of the campus area.\``);
 }
 //-------------------------------------------------------------------send message to MISAKA-NETWORK
 ser.channels.get('347618456335548427').send({embed: {
