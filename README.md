@@ -20,6 +20,6 @@
 - Fix: Time Object Callback Stuck
 - Fix: Time zone Problem. <br>
 `Due to the .setMinutes method is not reliable, So use "moment-timezone" instead.`
-> ## 0.12.10a Small Update (2017/9/27)
+> ## (0.12.10a) Small Update | (2017/9/27)
 > - Fix: `client.readyAt` Function Callback Not Correct
 > - Fix: Reference Error
