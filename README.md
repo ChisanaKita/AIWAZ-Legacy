@@ -23,3 +23,4 @@
 > ## (0.12.10a) Small Update | (2017/9/27)
 > - Fix: `client.readyAt` Function Callback Not Correct
 > - Fix: Reference Error
+# (2017/10/5) | 0.12.0 Version End, Next Update Will be 0.13.0.
