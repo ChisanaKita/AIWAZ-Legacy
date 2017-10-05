@@ -6,4 +6,4 @@
 
 # Project·DRAGON エイワズ(AIwaz) Angel of Science
 > Magic Side [Index-Project](https://github.com/STARLITENAMO/Index-Project)
-## Update 0.13.0 is on going
+## Update v0.13 is developing
