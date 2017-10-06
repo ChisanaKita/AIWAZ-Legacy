@@ -10,5 +10,5 @@
 > Now The Server owners Can Use Command `/install` To Automatically Build A World In Discord Using The (Majutsu No Index world) Setting.
 - Add: install.js File To Process And Executing The Functions
 - Add: Permission Logic Gate To Block The Non-server owners Users To Use This Command
-- Change: Client Version To : 0.13.0
+- Change: Client Version To : 0.13.0<br>
 > For More Info, Please See [d10c9a0](https://github.com/XiaoBeiLab/AIWAZ/commit/d10c9a0dcfa5bdde45db7862767fe514d5be431b)
