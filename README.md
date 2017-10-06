@@ -1,6 +1,5 @@
 <body>
-  <img src="https://i.imgur.com/Fta2jMg.jpg" alt="AIwaz" />
-  <iframe src="https://discordapp.com/widget?id=191539621119655936&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+  <img src="https://i.imgur.com/Fta2jMg.jpg" alt="AIwaz" /><iframe src="https://discordapp.com/widget?id=191539621119655936&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
 </body>
 
 # Project·DRAGON エイワズ(AIwaz) Angel of Science
