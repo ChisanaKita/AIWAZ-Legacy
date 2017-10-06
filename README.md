@@ -1,5 +1,5 @@
 <body>
-  <a href="https://github.com/XiaoBeiLab/AIWAZ"><img src="https://i.imgur.com/Fta2jMg.jpg" alt="AIwaz" /></a>
+  <img src="https://i.imgur.com/Fta2jMg.jpg" alt="AIwaz" />
   <iframe src="https://discordapp.com/widget?id=191539621119655936&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
 </body>
 
