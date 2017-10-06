@@ -12,7 +12,7 @@ if (guild.channels != null) return;
 
 //permission module
   let me = message.author;    //define me (message sender)
-  let permission = guild.member(me).permissions.has("ADMINISTRATOR");   //check the user rither or not have the permission
+  let permission = guild.member(me).permissions.has("ADMINISTRATOR");   //check the user isn't have the permission
 
 /*
 Logic gate of the user permission
