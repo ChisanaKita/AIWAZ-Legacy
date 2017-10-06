@@ -1,9 +1,11 @@
+<body>
 <div align="center">
   <p>
     <a href="https://github.com/XiaoBeiLab/AIWAZ"><img src="https://i.imgur.com/Fta2jMg.jpg" alt="AIwaz" /></a>
   </p>
 </div>
-
+  <iframe src="https://discordapp.com/widget?id=191539621119655936&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+</body>
 # Project·DRAGON エイワズ(AIwaz) Angel of Science
 > Magic Side [Index-Project](https://github.com/STARLITENAMO/Index-Project)
 ## UPDATE VERSION TO ( 0.13.0 ) | Server Builder (2017/10/07 00:32)
