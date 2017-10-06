@@ -1,6 +1,6 @@
 <body>
 <div>
-<img src="https://i.imgur.com/Fta2jMg.jpg" alt="AIwaz" /><iframe src="https://discordapp.com/widget?id=191539621119655936&theme=dark" width="279" height="450" allowtransparency="true" frameborder="0"></iframe>
+<img src="https://i.imgur.com/Fta2jMg.jpg" alt="AIwaz" /><iframe src="https://discordapp.com/widget?id=191539621119655936&theme=dark" width="279" height="370" allowtransparency="true" frameborder="0"></iframe>
 </div>
 </body>
 
