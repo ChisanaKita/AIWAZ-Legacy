@@ -7,7 +7,7 @@
 # Project·DRAGON エイワズ(AIwaz) Angel of Science
 > Magic Side [Index-Project](https://github.com/STARLITENAMO/Index-Project)
 ## UPDATE VERSION TO ( 0.13.0 ) | Server Builder (2017/10/07 00:32)
-> Now The Server owners Can Use Command `/install` To Automatically Build A World In Discord Using The (魔術の禁書目録) Setting.
+> Now The Server owners Can Use Command `/install` To Automatically Build A World In DISCORD Using The (魔術の禁書目録) Setting.
 - Add: install.js File To Process And Executing The Functions
 - Add: Permission Logic Gate To Block The Non-server owners Users To Use This Command
 - Change: Client Version To : 0.13.0<br>
