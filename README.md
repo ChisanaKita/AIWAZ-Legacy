@@ -12,3 +12,6 @@
 - Add: Permission Logic Gate To Block The Non-server owners Users To Use This Command
 - Change: Client Version To : 0.13.0<br>
 > For More Info, Please See [d10c9a0](https://github.com/XiaoBeiLab/AIWAZ/commit/d10c9a0dcfa5bdde45db7862767fe514d5be431b)
+## UPDATE VERSION TO (0.13.1) | Function Changes
+- Add: Roles Level 0 To Arrays At: skill.js And install.js
+> See commit [a3fd5cb](https://github.com/ChisanaKita/AIWAZ/commit/a3fd5cb7bde0860d07349f5303e9e81697fb0bac) And [0ef76f6](https://github.com/ChisanaKita/AIWAZ/commit/0ef76f64e373e35a2674d1cdf14c83ffd4918e08)
