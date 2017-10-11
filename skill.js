@@ -31,12 +31,15 @@ var r1 = guild.roles.find("name", "科學");
 	};
 //-----------------------------------------------------------------------------random gen r2 and r3
 	var RandomInt = GetRandomInt(1, 38);
-	var SRandomInt = GetRandomInt(1, 4);
+	var SRandomInt = GetRandomInt(1, 5);
 //------------------------------------------------------------------------------------r2 role array
-	var ArrayLevel = [	"Level 1 - 無能力者",
-						"Level 2 - 異能力者",
-						"Level 3 - 強能力者",
-						"Level 4 - 大能力者"];
+	var ArrayLevel = [
+		"Level 0 - 無能力者",
+		"Level 1 - 低能力者",
+		"Level 2 - 異能力者",
+		"Level 3 - 強能力者",
+		"Level 4 - 大能力者"
+	];
 //------------------------------------------------------------------------------------r2 Logic Gate
 	switch(SRandomInt)
 	{
@@ -44,6 +47,7 @@ var r1 = guild.roles.find("name", "科學");
 		case 2 : var r2 = guild.roles.find("name", ArrayLevel[1]);break;
 		case 3 : var r2 = guild.roles.find("name", ArrayLevel[2]);break;
 		case 4 : var r2 = guild.roles.find("name", ArrayLevel[3]);break;
+		case 5 : var r2 = guild.roles.find("name", ArrayLevel[4]);break;
 	};
 //------------------------------------------------------------------------------------r3 role array
 	var ArraySkill = [	"解析不能 - Unknown",
