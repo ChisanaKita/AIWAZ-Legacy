@@ -1,6 +1,6 @@
 {
   "name": "AIwaz",
-  "version": "0.13.0",
+  "version": "0.13.1",
   "description": "XAT_AIwaz",
   "main": "bot.js",
   "scripts": {
