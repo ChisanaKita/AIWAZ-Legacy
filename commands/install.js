@@ -78,6 +78,7 @@ var S_Skill = [
           ["科學","GREEN"],
           ["宗教","PURPLE"],
           ["AIM思考體","#11806a"],
+          ["絕對能力者 - Level 6","DARK_PURPLE"],
           ["Level 5 - 超能力者","PURPLE"],
           ["Level 4 - 大能力者","GREEN"],
           ["Level 3 - 強能力者","BLUE"],
