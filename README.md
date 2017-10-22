@@ -13,6 +13,9 @@
 - Change: Client Version To : 0.13.0<br>
 > For More Info, Please See [d10c9a0](https://github.com/XiaoBeiLab/AIWAZ/commit/d10c9a0dcfa5bdde45db7862767fe514d5be431b)
 ## UPDATE VERSION TO (0.13.1) | Function Changes
-- Add: Roles Level 0 To Arrays At: skill.js And install.js
+- Add: Roles (Level 0) To Arrays At: skill.js And install.js
 > See commit [a3fd5cb](https://github.com/ChisanaKita/AIWAZ/commit/a3fd5cb7bde0860d07349f5303e9e81697fb0bac) And [0ef76f6](https://github.com/ChisanaKita/AIWAZ/commit/0ef76f64e373e35a2674d1cdf14c83ffd4918e08)
 - Change: Client Version To : 0.13.1
+>## Small Update (0.13.1a)
+- Add: Role (Level 6) To The Array At install.js
+> See commit [256bb66](https://github.com/ChisanaKita/AIWAZ/commit/256bb667596f9933ed6917447a64d72ff11d0a75)
