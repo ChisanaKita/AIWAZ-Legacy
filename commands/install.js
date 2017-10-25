@@ -31,15 +31,16 @@ if (message.author.id != "179443176279375872") {
 var TextChannel = [
           "Sound-Only",
           "Judgment",
+          "aiw-log",
           "Misaka-Network"
         ];
 
 var VoiceChannel = [
-          "英國",
-          "法國",
-          "俄羅斯",
-          "伊莉沙里納獨立國同盟",
-          "美國",
+          "United Kingdom - 英國",
+          "France - 法國",
+          "Russia - 俄羅斯",
+          "Elizalina Alliance - エリザリーナ独立国同盟",
+          "United States - 美國",
             null,   //1,5
             null,   //2,6
             null,   //3.7
@@ -64,8 +65,8 @@ var VoiceChannel = [
             null,   //21,26,13
             null,   //22,27,14
             null,   //23,28,15
-          "統括理事会",
-          "虚数学区・五行機関"
+          "Academy City Board of Directors - 統括理事会",
+          "Imaginary Number District–Five Elements Institution - 虚数学区・五行機関"
         ];
 
 var Admin_skill = [
@@ -215,13 +216,13 @@ setTimeout(function () {
     };
 
     for (i = 0; i < 7; i++) {
-      guild.createChannel(VoiceChannel[i + 5] = "第" + (i + 1).toString() + "学区", 'voice');
+      guild.createChannel(VoiceChannel[i + 5] = "District " + (i + 1).ToString() + "第" + (i + 1).toString() + "学区", 'voice');
     };
 
     guild.createChannel("窓のないビル", 'voice');
 
     for (i = 0; i < 16; i++) {
-        guild.createChannel(VoiceChannel[i + 13] = "第" + (i + 8).toString() + "学区", 'voice');
+        guild.createChannel(VoiceChannel[i + 13] = "District " + (i + 1).ToString() + "第" + (i + 8).toString() + "学区", 'voice');
     };
 
     for (i = 0; i < 2; i++) {
