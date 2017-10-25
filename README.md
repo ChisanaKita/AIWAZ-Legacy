@@ -24,3 +24,4 @@
 >>## Small Update (0.13.1b)
 - Add: English Title For Each Voice Channel And Text Channel.
 - Add: Mod Log Channel For My BOT. (ONLY)
+>> See commit [11f74c8](https://github.com/ChisanaKita/AIWAZ/commit/11f74c8be5f3365c45f7194d48e6ba2e64a271a4)
