@@ -21,3 +21,6 @@
 - Change: Roles Name From (level x - XXXX TO XXXX - level x)
 > See commit [256bb66](https://github.com/ChisanaKita/AIWAZ/commit/256bb667596f9933ed6917447a64d72ff11d0a75) <br>
 > See commit [2645437](https://github.com/ChisanaKita/AIWAZ/commit/26454374ed77d524a9aaa5535dca29f45798eccd),[28c318c](https://github.com/ChisanaKita/AIWAZ/commit/28c318c8885843dbbd55f17c336307f0077e7b0b)
+>>## Small Update (0.13.1b)
+- Add: English Title For Each Voice Channel And Text Channel.
+- Add: Mod Log Channel For My BOT. (ONLY)
