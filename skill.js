@@ -6,6 +6,7 @@ var skill = (client, member) => {
 var guild = member.guild;
 let ser = client.guilds.find("name", "個人的現實");
 var d = member.joinedAt;
+const defaultChannel = guild.channels.find(c => c.permissionsFor(guild.me).has("SEND_MESSAGES"));
 //-----------------------------------------------------------------A function converting to HK time
 function toTimeZone(d, zone) {
  var format = 'YYYY/MM/DD HH:mm:ss';
@@ -19,7 +20,7 @@ At : ${toTimeZone(d, "Asia/Hong_Kong")}
 From : ${member.guild.name}`);
 //---------------------------------------------------------------------------------for other server
 if (guild.id != '191539621119655936') {
-	guild.channels.find('type', 'text').send(`Welcome ${member.user.username} Joined Our Server.\nUse Command \`/help\` To Open The Help List`);
+	defaultChannel.send(`Welcome ${member.user.username} Joined Our Server.\nUse Command \`/help\` To Open The Help List`);
 	return;
 }
 //------------------------------------------------------------------------------add r1 (first role)
@@ -134,7 +135,7 @@ var r1 = guild.roles.find("name", "科學");
 if(!(r2 == guild.roles.find("name", ArrayLevel[0]))){
 	member.addRole(r1).then(member.addRole(r2)).then(member.addRole(r3));
 
-	guild.channels.find('type', 'text').send(`🔊  Welcome \*\*${member.user.username}\*\* ( ${r2.name} ) Joined Our Server.\n🔸  Your Skill is : \`${r3.name}\` ${r3}
+	defaultChannel.send(`🔊  Welcome \*\*${member.user.username}\*\* ( ${r2.name} ) Joined Our Server.\n🔸  Your Skill is : \`${r3.name}\` ${r3}
 	\*\*\_\_                                                                              ⚠️Warning⚠️                                                                             \_\_\*\*
 	Please Follow The \*\*NAMO Protocol (Revised) Regulations\*\* Or You Will Get Kick By <@347782166811377667>\n
 	\n                                                 🔸🔹🔸\*\*\_\_   (NAMO Protocol [1.5])   \_\_\*\*🔸🔹🔸\n                                                Use Command : /register To Register Your Identity
@@ -142,14 +143,14 @@ if(!(r2 == guild.roles.find("name", ArrayLevel[0]))){
 } else {
 	member.addRole(r1).then(member.addRole(r2));
 
-	guild.channels.find('type', 'text').send(`🔊  Welcome \*\*${member.user.username}\*\* ( ${r2.name} ) Joined Our Server.\n🔸  Your Skill is : \`NULL\`
+	defaultChannel.send(`🔊  Welcome \*\*${member.user.username}\*\* ( ${r2.name} ) Joined Our Server.\n🔸  Your Skill is : \`NULL\`
 	\*\*\_\_                                                                              ⚠️Warning⚠️                                                                             \_\_\*\*
 	Please Follow The \*\*NAMO Protocol (Revised) Regulations\*\* Or You Will Get Kick By <@347782166811377667>\n
 	\n                                                 🔸🔹🔸\*\*\_\_   (NAMO Protocol [1.5])   \_\_\*\*🔸🔹🔸\n                                                Use Command : /register To Register Your Identity
 \`                                       If you do not choose to register, you will not be able to access some of the campus area.\``);
 }
 //-------------------------------------------------------------------send message to MISAKA-NETWORK
-ser.channels.get('347618456335548427').send({embed: {
+ser.channels.find("name","misaka-network").send({embed: {
 	color: 10158080,
 	description: '\_\_' + '------ α Lyrae DownLink ' + version + ' ------' + '\_\_\n' + 'Major Event : '  + '\`' + member.user.username + '\`' + ' Joined' + '\nAt : ' + toTimeZone(d, "Asia/Hong_Kong") + '\nFrom : ' + guild.name +
 	'\n--- \*\*NAMO Protocol (Revised) Regulations [1.22]\*\* --- \n(ADDING AUTO ROLES)' +
@@ -157,6 +158,6 @@ ser.channels.get('347618456335548427').send({embed: {
 	'\n' + r2.id + ' (' + r2.name + ')' +
 	'\n' + r3.id + ' (' + r3.name + ')' + '\`\`\`'
 }});
-ser.channels.get('359923471029108747').send(`Guild Event (guildmember.join) Trigger \nAt: ${toTimeZone(d, "Asia/Hong_Kong")}, By: ${member.user.username}`)
+ser.channels.find("name","aiw-log").send(`Guild Event (guildmember.join) Trigger \nAt: ${toTimeZone(d, "Asia/Hong_Kong")}, By: ${member.user.username}`)
 }
 exports.skill = skill;
