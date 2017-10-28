@@ -7,8 +7,13 @@ module.exports = client => {
 
   console.log(`I\`m Online at : ${toTimeZone(d, "Asia/Hong_Kong")} \n AIwaz 御坂網絡 : ${version}`);
   client.user.setPresence( { game: {name: 'AIW' + ' 御坂網絡 ' + version, type: 0 }});
-  ser.channels.find('name', 'aiw-log').send(`Client Online at : ${toTimeZone(d, "Asia/Hong_Kong")}`);
-
+  
+  try{
+    ser.channels.find('name', 'aiw-log').send(`Client Online at : ${toTimeZone(d, "Asia/Hong_Kong")}`);
+  } catch (error) {
+    console.log("Can't find channel");
+  }
+  
   function toTimeZone(d, zone) {
    var format = 'YYYY/MM/DD HH:mm:ss';
    return moment(d, format).tz(zone).format(format);
