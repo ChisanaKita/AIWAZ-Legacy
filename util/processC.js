@@ -18,11 +18,11 @@ var processC = (client, message, num) => {
  
   try {
     u.addRole(r4);
-    guild.channels.find('type', 'text').send(`${r4.name} Added.`);
-    guild.channels.get('347618456335548427').send('\`------ 御坂網絡  ' + version + ' ------\`' + `\n\`\`\`User : ${nick}'s identification logged as : ${r4.name}\`\`\``);
+    message.channel.send(`${r4.name} Added.`);
+    guild.channels.find('name', 'misaka-network').send('\`------ 御坂網絡  ' + version + ' ------\`' + `\n\`\`\`User : ${nick}'s identification logged as : ${r4.name}\`\`\``);
   } catch (error) {
     console.log(error);
-    guild.channels.get('347618456335548427').send('\`------ 御坂網絡  ' + version + ' ------\`\n' + '\*\*Failed Executing\*\* : Register ' +  '\n\`\`\`js\n' + error.stack + '\`\`\`');
+    guild.channels.find('name', 'misaka-network').send('\`------ 御坂網絡  ' + version + ' ------\`\n' + '\*\*Failed Executing\*\* : Register ' +  '\n\`\`\`js\n' + error.stack + '\`\`\`');
   }
 }
 exports.processC = processC;
