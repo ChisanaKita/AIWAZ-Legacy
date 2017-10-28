@@ -3,7 +3,7 @@ const fs = require('fs');
 const moment = require('moment-timezone');
 module.exports = client => {
   var d = new Date();
-  var ser = client.guilds.get("179445290795794432");
+  var ser = client.guilds.get("191539621119655936");
 
   console.log(`I\`m Online at : ${toTimeZone(d, "Asia/Hong_Kong")} \n AIwaz 御坂網絡 : ${version}`);
   client.user.setPresence( { game: {name: 'AIW' + ' 御坂網絡 ' + version, type: 0 }});
