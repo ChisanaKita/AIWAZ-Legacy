@@ -16,12 +16,12 @@ function toTimeZone(d, zone) {
 //--------------------------------------------------------------------------------console log event
 console.log(`
     >Guild Event<
-Member : (${member.user.username}) Joined.
+Member : (${member.user.tag}) Joined.
 At : ${toTimeZone(d, "Asia/Hong_Kong")}
 From : ${member.guild.name}`);
 //---------------------------------------------------------------------------------for other server
 if (guild.id != '191539621119655936') {
-	defaultChannel.send(`Welcome ${member.user.username} Joined Our Server.\nUse Command \`/help\` To Open The Help List`);
+	defaultChannel.send(`Welcome ${member.user.tag} Joined Our Server.\nUse Command \`/help\` To Open The Help List`);
 	return;
 }
 //------------------------------------------------------------------------------add r1 (first role)
@@ -159,6 +159,6 @@ ser.channels.find("name","misaka-network").send({embed: {
 	'\n' + r2.id + ' (' + r2.name + ')' +
 	'\n' + r3.id + ' (' + r3.name + ')' + '\`\`\`'
 }});
-logchannel.channels.find("name","aiw-log").send(`Guild Event (guildmember.join) Trigger \nAt: ${toTimeZone(d, "Asia/Hong_Kong")}, By: ${member.user.username}#${member.user.tag}`)
+logchannel.channels.find("name","aiw-log").send(`Guild Event (guildmember.join) Trigger \nAt: ${toTimeZone(d, "Asia/Hong_Kong")}, By: ${member.user.tag}`)
 }
 exports.skill = skill;
