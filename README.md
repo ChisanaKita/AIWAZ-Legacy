@@ -27,3 +27,13 @@
 - Change: Default Channel Method
 >> See commit [11f74c8](https://github.com/ChisanaKita/AIWAZ/commit/11f74c8be5f3365c45f7194d48e6ba2e64a271a4) <br>
 >> See commit [3e87ae1](https://github.com/ChisanaKita/AIWAZ/commit/3e87ae14dc182d8f01ea4e9eee83b2892c95c77d)
+## UPDATE VERSION TO (0.13.2) | Script Fixing
+- Add: Dummy Proof System
+- Change: Move `mod-log` Channel To a Different Server
+- Change: Logged Data Type
+- Optimize Script
+> See commit [7d60880](https://github.com/ChisanaKita/AIWAZ/commit/7d6088004a41980ea50e6358a776629b564044d5) <br>
+> See commit [9a3ae3a](https://github.com/ChisanaKita/AIWAZ/commit/9a3ae3aec325a675817cde44472cc2ae871aab37) <br>
+> See commit [81a93af](https://github.com/ChisanaKita/AIWAZ/commit/81a93afe25376429aa095ab4161fd0d9b421345a)
+[6149154](https://github.com/ChisanaKita/AIWAZ/commit/61491541aeed2d2260c76dd5ffda53847202143b)
+[82d687c](https://github.com/ChisanaKita/AIWAZ/commit/82d687cd105af2323e51c6c5c2a3cc8f08eb6470)
