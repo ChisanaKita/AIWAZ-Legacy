@@ -32,6 +32,7 @@
 - Change: Move `mod-log` Channel To a Different Server
 - Change: Logged Data Type
 - Optimize Script
+- Change: Client Version To : 0.13.2
 > See commit [7d60880](https://github.com/ChisanaKita/AIWAZ/commit/7d6088004a41980ea50e6358a776629b564044d5) <br>
 > See commit [9a3ae3a](https://github.com/ChisanaKita/AIWAZ/commit/9a3ae3aec325a675817cde44472cc2ae871aab37) <br>
 > See commit [81a93af](https://github.com/ChisanaKita/AIWAZ/commit/81a93afe25376429aa095ab4161fd0d9b421345a)
