@@ -7,6 +7,7 @@ var guild = member.guild;
 let ser = client.guilds.find("name", "個人的現實");
 var d = member.joinedAt;
 const defaultChannel = guild.channels.find(c => c.permissionsFor(guild.me).has("SEND_MESSAGES"));
+const logchannel = client.guilds.get("179445290795794432");
 //-----------------------------------------------------------------A function converting to HK time
 function toTimeZone(d, zone) {
  var format = 'YYYY/MM/DD HH:mm:ss';
@@ -158,6 +159,6 @@ ser.channels.find("name","misaka-network").send({embed: {
 	'\n' + r2.id + ' (' + r2.name + ')' +
 	'\n' + r3.id + ' (' + r3.name + ')' + '\`\`\`'
 }});
-ser.channels.find("name","aiw-log").send(`Guild Event (guildmember.join) Trigger \nAt: ${toTimeZone(d, "Asia/Hong_Kong")}, By: ${member.user.username}`)
+logchannel.channels.find("name","aiw-log").send(`Guild Event (guildmember.join) Trigger \nAt: ${toTimeZone(d, "Asia/Hong_Kong")}, By: ${member.user.username}#${member.user.tag}`)
 }
 exports.skill = skill;
