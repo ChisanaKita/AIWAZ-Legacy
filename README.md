@@ -38,12 +38,12 @@
 > See commit [81a93af](https://github.com/ChisanaKita/AIWAZ/commit/81a93afe25376429aa095ab4161fd0d9b421345a)
 [6149154](https://github.com/ChisanaKita/AIWAZ/commit/61491541aeed2d2260c76dd5ffda53847202143b)
 [82d687c](https://github.com/ChisanaKita/AIWAZ/commit/82d687cd105af2323e51c6c5c2a3cc8f08eb6470)
-## UPDATE VERSION TO (0.13.8) | Function Change
+## UPDATE VERSION TO (0.13.8) | Function Change (2017/10/30 09:20) 
 - Added: External Array File `array.json`
 - Change: The install And uninstall Commands's Behavior <br>
 `Now Both Commands Share The Same Array File To Function`
 - Optimize Script
-- Change: Client Version To : 0.13.8 (2017/10/30 09:20) 
+- Change: Client Version To : 0.13.8
 > See commit [e9677b8](https://github.com/ChisanaKita/AIWAZ/commit/e9677b8ab295786873fc595d157000d496a556f5) <br>
 > See commit [7d60880](https://github.com/ChisanaKita/AIWAZ/commit/548ab573b64b71fae112b3ee7a0e732501357298)
 [d92cb12](https://github.com/ChisanaKita/AIWAZ/commit/d92cb128af864fa016c6522b985296f6ff9e6c03)
