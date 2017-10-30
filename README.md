@@ -28,7 +28,7 @@
 >> See commit [11f74c8](https://github.com/ChisanaKita/AIWAZ/commit/11f74c8be5f3365c45f7194d48e6ba2e64a271a4) <br>
 >> See commit [3e87ae1](https://github.com/ChisanaKita/AIWAZ/commit/3e87ae14dc182d8f01ea4e9eee83b2892c95c77d)
 ## UPDATE VERSION TO (0.13.2) | Script Fixing
-- Added: Dummy-Proof System
+- Added: Dummy-Proofing System
 - Change: Move `mod-log` Channel To a Different Server
 - Change: Logged Data Type
 - Optimize Script
