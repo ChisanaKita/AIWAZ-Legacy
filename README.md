@@ -43,7 +43,7 @@
 - Change: The install And uninstall Commands's Behavior <br>
 `Now Both Commands Share The Same Array File To Function`
 - Optimize Script
-- Change: Client Version To : 0.13.8 (2017/10/30 09:20)
+- Change: Client Version To : 0.13.8 (2017/10/30 09:20) 
 > See commit [e9677b8](https://github.com/ChisanaKita/AIWAZ/commit/e9677b8ab295786873fc595d157000d496a556f5) <br>
 > See commit [7d60880](https://github.com/ChisanaKita/AIWAZ/commit/548ab573b64b71fae112b3ee7a0e732501357298)
 [d92cb12](https://github.com/ChisanaKita/AIWAZ/commit/d92cb128af864fa016c6522b985296f6ff9e6c03)
