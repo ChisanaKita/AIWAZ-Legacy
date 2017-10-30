@@ -40,7 +40,7 @@
 [82d687c](https://github.com/ChisanaKita/AIWAZ/commit/82d687cd105af2323e51c6c5c2a3cc8f08eb6470)
 ## UPDATE VERSION TO (0.13.8) | Function Change
 - Added: External Array File `array.json`
-- Change: Command install And uninstall <br>
+- Change: install And uninstall Commands behavior <br>
 `Now Both Commands Share The Same Array File To Function`
 - Optimize Script
 - Change: Client Version To : 0.13.8
