@@ -1,38 +1,38 @@
 const version = require('../package.json').version;
 const moment = require('moment-timezone');
+const d = new Date();
+const timeout = ms => new Promise(res => setTimeout(res, ms));
 exports.run = (client, message, args) => {
   message.delete();
-  var d = new Date();
 
-  message.channel.send('\`S.Y.S.T.E.M. Shutting Down.....\`').then(response => response.delete(1000));
+  restart();
 
-  setTimeout(function () {
-    client.destroy();
-  },2000);
+async function restart() {
+  let response = await message.channel.send('\`S.Y.S.T.E.M. Shutting Down.....\`');
+  await response.delete(1000);
+  await client.destroy();
+  await timeout(3000);
+  await client.login("MzYxNTEwMDI5MDY2NjMzMjE2.DNs4UQ.GoQQqSTUx4nvpI2OXE7EUvFSP20");
+  await client.user.setStatus('dnd');
+  await client.user.setPresence( { game: {name: 'AIW' + ' 御坂網絡 ' + 'Disconnected', type: 0 }});
+  let response1 = await message.channel.send('> \*\*[node.AI]\*\* watching: * -AIM- * \n> \*\*[node.AI]\*\* Starting AIwaz... \n> Loading.. \*\*MISAKA-NETWORK\*\* ' + '\`' + version + '\`')
+  await response1.delete(5000);
+  let response2 = await message.channel.send('> CORE Restart Complete..... \n> Awaiting \*\*readdir\*\* Callback...');
+  await response2.delete(3000);
+  await client.user.setPresence( { game: {name: 'AIW' + ' 御坂網絡 ' + version, type: 0 }});
+  let response3 = await message.channel.send('> \*\*MISAKA-NETWORK\*\* Connected.... Callback Sueecss..');
+  await response3.delete(2000);
+  await client.user.setStatus('online');
+  let finreply = await message.channel.send({embed: {
+    color: 15597568,
+    description: `At : \`${toTimeZone(d, "Asia/Hong_Kong")}\` S.Y.S.T.E.M. Successfully Restarted..`
+  }});
+  await finreply.delete(5000);
+};
 
-	setTimeout(function () {
-    client.login(process.env.BOT_TOKEN);
-    message.channel.send('\*\*[nodemon]\*\* watching: * -AIM- * \n\*\*[nodemon]\*\* starting AIwaz... \nLoading.. \*\*MISAKA-NETWORK\*\* ' + '\`' + version + '\`').then(response => response.delete(5000));
-  },5000);
-
-  setTimeout(function () {
-    message.channel.send('CORE Restart Complete! ...').then(response => response.delete(1000));
-  },10050);
-
-  setTimeout(function () {
-    message.channel.send('\*\*MISAKA-NETWORK\*\* Connected..').then(response => response.delete(2000));
-  },11100);
-
-  setTimeout(function () {
-    message.channel.send({embed: {
-      color: 15597568,
-      description: 'At : ' + '\`' + toTimeZone(d, "Asia/Hong_Kong") + '\`' + ' S.Y.S.T.E.M. Successfully Restarted..'
-    }});
-  },13150);
-
-function toTimeZone(d, zone) {
+  function toTimeZone(d, zone) {
     var format = 'YYYY/MM/DD HH:mm:ss';
     return moment(d, format).tz(zone).format(format);
-}
+  };
 
 }
