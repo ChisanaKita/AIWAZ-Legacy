@@ -3,6 +3,7 @@ const client = new Discord.Client();
 const version = require('./package.json').version;
 require('./util/eventLoader')(client);
 const Token = process.env.BOT_TOKEN;
+const fs = require('fs');
 
 var data = `{ "Token": "${Token}" }`;
 fs.writeFile('./token.json',data);
