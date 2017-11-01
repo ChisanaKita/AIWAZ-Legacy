@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const version = require('./package.json').version;
 require('./util/eventLoader')(client);
+const Token = process.env.BOT_TOKEN;
 
 //call the skill.js
 client.on("guildMemberAdd", (member) => {
@@ -23,4 +24,4 @@ var reload = (message, cmd) => {
 exports.reload = reload;
 
 
-client.login(process.env.BOT_TOKEN);
+client.login(Token);
