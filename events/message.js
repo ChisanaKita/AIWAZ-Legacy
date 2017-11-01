@@ -10,6 +10,8 @@ module.exports = message => {
 	const command = args.shift().slice(prefix.length);
 	const guild = client.guilds.get("179445290795794432");
 	
+if (client.user.presence['status'] == 'dnd' && message.author.id !== '179443176279375872') return;
+	
 if (!command) {
 	return;
 }
@@ -20,7 +22,6 @@ function toTimeZone(d, zone) {
 };
 	
 console.log(`
-    >Message Event<
 Command (${command}) Trigger. At: ${toTimeZone(d, "Asia/Hong_Kong")}
 By: ${message.author.tag}, From: ${message.guild.name}`);
 
