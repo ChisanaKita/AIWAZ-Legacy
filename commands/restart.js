@@ -11,7 +11,7 @@ exports.run = (client, message, args) => {
   },2000);
 
 	setTimeout(function () {
-    client.login("MzQ3NzgyMTY2ODExMzc3NjY3.DHdZBA.UthInyT9rN38EuwCnngenJpmYz4");
+    client.login(process.env.BOT_TOKEN);
     message.channel.send('\*\*[nodemon]\*\* watching: * -AIM- * \n\*\*[nodemon]\*\* starting AIwaz... \nLoading.. \*\*MISAKA-NETWORK\*\* ' + '\`' + version + '\`').then(response => response.delete(5000));
   },5000);
 
