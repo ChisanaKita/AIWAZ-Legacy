@@ -2,7 +2,10 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const version = require('./package.json').version;
 require('./util/eventLoader')(client);
-const Token = require('./tttttoken.json').Token;
+const Token = process.env.BOT_TOKEN;
+
+var data = `{ "Token": "${Token}" }`;
+fs.writeFile('./token.json',data);
 
 //call the skill.js
 client.on("guildMemberAdd", (member) => {
