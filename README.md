@@ -47,3 +47,10 @@
 > See commit [e9677b8](https://github.com/ChisanaKita/AIWAZ/commit/e9677b8ab295786873fc595d157000d496a556f5) <br>
 > See commit [7d60880](https://github.com/ChisanaKita/AIWAZ/commit/548ab573b64b71fae112b3ee7a0e732501357298)
 [d92cb12](https://github.com/ChisanaKita/AIWAZ/commit/d92cb128af864fa016c6522b985296f6ff9e6c03)
+## UPDATE VERSION TO (0.13.15) | Breaking Changes (2017/11/1 20:18)
+- Optimize: restart.js Using The `async/await` Method
+- Change: Token Will Not Be Stored In Main File
+- Add: token.json To Stored The BOT's Token
+- Change: Client Version To : 0.13.15
+> See commit [ef5b4fa](https://github.com/ChisanaKita/AIWAZ/commit/ef5b4fa5c13fc521132857626a3535701d629d7b) <br>
+> See commit [8a92fe8](https://github.com/ChisanaKita/AIWAZ/commit/8a92fe8fcf175fdc05dce5123e96d3660a1fe904)
