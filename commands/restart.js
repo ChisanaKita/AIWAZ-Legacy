@@ -12,7 +12,7 @@ async function restart() {
   await response.delete(1000);
   await client.destroy();
   await timeout(3000);
-  await client.login("MzYxNTEwMDI5MDY2NjMzMjE2.DNs4UQ.GoQQqSTUx4nvpI2OXE7EUvFSP20");
+  await client.login(process.env.BOT_TOKEN);
   await client.user.setStatus('dnd');
   await client.user.setPresence( { game: {name: 'AIW' + ' 御坂網絡 ' + 'Disconnected', type: 0 }});
   let response1 = await message.channel.send('> \*\*[node.AI]\*\* watching: * -AIM- * \n> \*\*[node.AI]\*\* Starting AIwaz... \n> Loading.. \*\*MISAKA-NETWORK\*\* ' + '\`' + version + '\`')
