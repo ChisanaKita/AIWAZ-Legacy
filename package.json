@@ -3,8 +3,8 @@
   "version": "0.13.8",
   "description": "XAT_AIwaz",
   "main": "bot.js",
-  "scripts": {
-    "test": ""
+  "engines": {
+    "node": "8.9.0"
   },
   "author": "XiaoBei",
   "license": "MIT",
