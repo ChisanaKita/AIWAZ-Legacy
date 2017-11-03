@@ -52,5 +52,6 @@
 - Change: Token Will Not Be Stored In Main File
 - Add: token.json To Stored The BOT's Token
 - Change: Client Version To : 0.13.15
-> See commit [dd3ce88](https://github.com/ChisanaKita/AIWAZ/commit/dd3ce88c057addb12dd9f6452b635219cef62912) <br>
+> See commit [dd3ce88](https://github.com/ChisanaKita/AIWAZ/commit/dd3ce88c057addb12dd9f6452b635219cef62912)  And 
+[a752732](https://github.com/ChisanaKita/AIWAZ/commit/a75273223a973b5ab8d840b4cdafac723e65e7bc) <br>
 > See commit [8a92fe8](https://github.com/ChisanaKita/AIWAZ/commit/8a92fe8fcf175fdc05dce5123e96d3660a1fe904)
