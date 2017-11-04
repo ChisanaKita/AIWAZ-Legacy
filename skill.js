@@ -6,7 +6,6 @@ var skill = (client, member) => {
 var guild = member.guild;
 let ser = client.guilds.find("name", "個人的現實");
 var d = member.joinedAt;
-const defaultChannel = guild.channels.find(c => c.permissionsFor(guild.me).has("SEND_MESSAGES"));
 const logchannel = client.guilds.get("179445290795794432");
 //-----------------------------------------------------------------A function converting to HK time
 function toTimeZone(d, zone) {
@@ -21,7 +20,7 @@ At : ${toTimeZone(d, "Asia/Hong_Kong")}
 From : ${member.guild.name}`);
 //---------------------------------------------------------------------------------for other server
 if (guild.id != '191539621119655936') {
-	guild.defaultChannel.send(`Welcome ${member.user.tag} Joined Our Server.\nUse Command \`/help\` To Open The Help List`);
+	guild.channels.find('type', 'text').send(`Welcome ${member.user.tag} Joined Our Server.\nUse Command \`/help\` To Open The Help List`);
 	return;
 }
 //------------------------------------------------------------------------------add r1 (first role)
@@ -136,7 +135,7 @@ var r1 = guild.roles.find("name", "科學");
 if(!(r2 == guild.roles.find("name", ArrayLevel[0]))){
 	member.addRole(r1).then(member.addRole(r2)).then(member.addRole(r3));
 
-	guild.defaultChannel.send(`🔊  Welcome \*\*${member.user.username}\*\* ( ${r2.name} ) Joined Our Server.\n🔸  Your Skill is : \`${r3.name}\` ${r3}
+	guild.channels.find('type', 'text').send(`🔊  Welcome \*\*${member.user.username}\*\* ( ${r2.name} ) Joined Our Server.\n🔸  Your Skill is : \`${r3.name}\` ${r3}
 	\*\*\_\_                                                                              ⚠️Warning⚠️                                                                             \_\_\*\*
 	Please Follow The \*\*NAMO Protocol (Revised) Regulations\*\* Or You Will Get Kick By <@347782166811377667>\n
 	\n                                                 🔸🔹🔸\*\*\_\_   (NAMO Protocol [1.5])   \_\_\*\*🔸🔹🔸\n                                                Use Command : /register To Register Your Identity
@@ -144,7 +143,7 @@ if(!(r2 == guild.roles.find("name", ArrayLevel[0]))){
 } else {
 	member.addRole(r1).then(member.addRole(r2));
 
-	guild.defaultChannel.send(`🔊  Welcome \*\*${member.user.username}\*\* ( ${r2.name} ) Joined Our Server.\n🔸  Your Skill is : \`NULL\`
+	guild.channels.find('type', 'text').send(`🔊  Welcome \*\*${member.user.username}\*\* ( ${r2.name} ) Joined Our Server.\n🔸  Your Skill is : \`NULL\`
 	\*\*\_\_                                                                              ⚠️Warning⚠️                                                                             \_\_\*\*
 	Please Follow The \*\*NAMO Protocol (Revised) Regulations\*\* Or You Will Get Kick By <@347782166811377667>\n
 	\n                                                 🔸🔹🔸\*\*\_\_   (NAMO Protocol [1.5])   \_\_\*\*🔸🔹🔸\n                                                Use Command : /register To Register Your Identity
