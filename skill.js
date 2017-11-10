@@ -24,7 +24,7 @@ if (guild.id != '191539621119655936') {
 	return;
 }
 //------------------------------------------------------------------------------add r1 (first role)
-var r1 = guild.roles.find("name", "科學");
+var r1 = guild.roles.find("name", "科学 - Science");
 //------------------------------------------------------------------------------random num function
 	function GetRandomInt(MinInt, MaxInt) {
 		var x = Math.floor((Math.random() * MaxInt) + MinInt);
