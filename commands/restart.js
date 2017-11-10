@@ -15,12 +15,12 @@ async function restart() {
   await timeout(3000);
   await client.login(`${token}`);
   await client.user.setStatus('dnd');
-  await client.user.setPresence( { game: {name: 'AIW' + ' 御坂網絡 ' + 'Disconnected', type: 0 }});
+  await client.user.setPresence( { game: {name: '御坂網絡 ' + 'Connecting', type: 2 }});
   let response1 = await message.channel.send('> \*\*[node.AI]\*\* watching: * -AIM- * \n> \*\*[node.AI]\*\* Starting AIwaz... \n> Loading.. \*\*MISAKA-NETWORK\*\* ' + '\`' + version + '\`')
   await response1.delete(5000);
   let response2 = await message.channel.send('> CORE Restart Complete..... \n> Awaiting \*\*readdir\*\* Callback...');
   await response2.delete(3000);
-  await client.user.setPresence( { game: {name: 'AIW' + ' 御坂網絡 ' + version, type: 0 }});
+  await client.user.setPresence( { game: {name: '御坂網絡 ' + version, type: 3 }});
   let response3 = await message.channel.send('> \*\*MISAKA-NETWORK\*\* Connected.... Callback Sueecss..');
   await response3.delete(2000);
   await client.user.setStatus('online');
