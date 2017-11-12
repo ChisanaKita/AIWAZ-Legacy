@@ -30,8 +30,6 @@ By: ${message.author.tag}, From: ${message.guild.name}`);
 		let cmdFile = require(`../commands/${command}`);
 		cmdFile.run(client, message, args);
 	} catch (error) {
-			console.log(`\n${error}`);
-			message.channel.send('⚠️Error : ' + error.message).then(response => response.delete(10000));
 			 guild.channels.find('name', 'aiw-log').send({embed: {
 			 	color: 10158080,
 			 	description: '\`' + '------ 御坂網絡  ' + version + ' ------' + '\`\n' + 'Failed Execute Command : ' + command + `\nInput By : ` + message.author.tag + '\nAt : ' + toTimeZone(d, "Asia/Hong_Kong") + '\nFrom : ' + message.guild  + '\n\`\`\`js\n' + error.stack + '\`\`\`'
