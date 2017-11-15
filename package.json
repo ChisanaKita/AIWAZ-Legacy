@@ -9,7 +9,7 @@
   "author": "ChisanaKita",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "^11.2.0",
+    "discord.js": "hydrabolt/discord.js",
     "eris": "^0.7.0",
     "ffmpeg-binaries": "^3.2.2-3",
     "uws": "^8.14.0",
