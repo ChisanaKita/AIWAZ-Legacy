@@ -6,7 +6,7 @@ module.exports = client => {
   var ser = client.guilds.get("179445290795794432");
 
   console.log(`I\`m Online at : ${toTimeZone(d, "Asia/Hong_Kong")} \n AIwaz 御坂網絡 : ${version}`);
-  client.user.setPresence( { game: {name: '御坂網絡 ' + version, type: 3 }});
+  client.user.setPresence( { game: {name: '御坂網絡 ' + version, type:3 }});
   
   try{
     ser.channels.find('name', 'aiw-log').send(`Client Online at : ${toTimeZone(d, "Asia/Hong_Kong")}`);
