@@ -9,7 +9,7 @@ var data = `{ "Token": "${Token}" }`;
 
 let tokendata = require('./token.json').Token;
 if (!tokendata == null) {
-	fs.writeFile('./token.json', data, (error) => {console.log('Error: fs Fail To Write Token')});
+	fs.writeFile('./token.json', data, (error) => {console.log(error.message)});
 }
 
 //call the skill.js
