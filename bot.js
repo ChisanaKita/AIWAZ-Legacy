@@ -5,7 +5,10 @@ require('./util/eventLoader')(client);
 const Token = process.env.BOT_TOKEN;
 const fs = require('fs');
 
-fs.writeFile('./token.txt', Token, (error) => {console.log(error)});
+fs.writeFile('./token.txt', Token, (err) => {
+  if (err) throw err;
+  console.log('The file has been saved!');
+});
 
 //call the skill.js
 client.on("guildMemberAdd", (member) => {
