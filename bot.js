@@ -6,7 +6,11 @@ const Token = process.env.BOT_TOKEN;
 const fs = require('fs');
 
 var data = `{ "Token": "${Token}" }`;
-fs.writeFile('./token.json', data, (error) => {console.log('Error: fs Fail To Write Token')});
+
+let tokendata = require('../tttttoken.json').Token;
+if (!tokendata == null) {
+	fs.writeFile('./token.json', data, (error) => {console.log('Error: fs Fail To Write Token')});
+}
 
 //call the skill.js
 client.on("guildMemberAdd", (member) => {
