@@ -2,14 +2,14 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const version = require('./package.json').version;
 require('./util/eventLoader')(client);
+const tokendata = require('./token.json').Token;
 const Token = process.env.BOT_TOKEN;
 const fs = require('fs');
 
 var data = `{ "Token": "${Token}" }`;
 
-let tokendata = require('./token.json').Token;
 if (!tokendata == null) {
-	fs.writeFile('./token.json', data, (error) => {console.log(error.message)});
+	fs.writeFile('./token.json', data, (error) => {console.log(error)});
 }
 
 //call the skill.js
