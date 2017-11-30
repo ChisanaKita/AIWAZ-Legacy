@@ -3,10 +3,14 @@ const version = require('../package.json').version;
 const moment = require('moment-timezone');
 const d = new Date();
 const timeout = ms => new Promise(res => setTimeout(res, ms));
-const token = fs.readFile('../token.txt', 'utf8');
 exports.run = (client, message, args) => {
   message.delete();
 
+  fs.readFile('../token.txt', 'utf8', (err, data) => {
+  if (err) throw err;
+  var token = data;
+});
+  
   restart();
 
 async function restart() {
