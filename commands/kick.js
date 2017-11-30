@@ -41,7 +41,7 @@ Else ,Send a message say that the sender missing permission.
         .setColor("#e91e63")
         .setDescription(`${x.username} has kicked user : ${user.username} At : ${servername}\n\`\`\`Resone : ${resone}\`\`\``)
         .setFooter('御坂網絡 ' + (version) + ' ©️ Copyright <2017> | <小北> ','https://i.imgur.com/Fta2jMg.jpg')
-    ser.channels.get('347618456335548427').send({embed});
+    ser.channels.find('name', 'misaka-network').send({embed});
   } else {
     message.channel.send('Missing Permission');
   }
