@@ -1,8 +1,9 @@
+const fs = require('fs');
 const version = require('../package.json').version;
 const moment = require('moment-timezone');
 const d = new Date();
 const timeout = ms => new Promise(res => setTimeout(res, ms));
-const token = require('../token.json').Token;
+const token = fs.readFile('../token.txt', 'utf8');
 exports.run = (client, message, args) => {
   message.delete();
 
@@ -13,7 +14,7 @@ async function restart() {
   await response.delete(1000);
   await client.destroy();
   await timeout(3000);
-  await client.login(`${token}`);
+  await client.login(token);
   await client.user.setStatus('dnd');
   await client.user.setPresence( { game: {name: '御坂網絡 ' + 'Connecting', type: 2 }});
   let response1 = await message.channel.send('> \*\*[node.AI]\*\* watching: * -AIM- * \n> \*\*[node.AI]\*\* Starting AIwaz... \n> Loading.. \*\*MISAKA-NETWORK\*\* ' + '\`' + version + '\`')
