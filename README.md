@@ -55,3 +55,11 @@
 > See commit [dd3ce88](https://github.com/ChisanaKita/AIWAZ/commit/dd3ce88c057addb12dd9f6452b635219cef62912)  And 
 [a752732](https://github.com/ChisanaKita/AIWAZ/commit/a75273223a973b5ab8d840b4cdafac723e65e7bc) <br>
 > See commit [8a92fe8](https://github.com/ChisanaKita/AIWAZ/commit/8a92fe8fcf175fdc05dce5123e96d3660a1fe904)
+## UPDATE VERSION TO (0.13.28) | Bug Fixing (2017/11/30 22:38)
+- Change: Restart Command 
+`Cause Heroku can't storge filesystem, So I put the whole function in the main file`
+- Change: `kick.js` get channel method
+- Delete: Useless Files
+- Change: Client Version To : 0.13.28
+> See commit [83b9829](https://github.com/ChisanaKita/AIWAZ/commit/83b9829b526fdf83211c1337b2bba3d42d60bd20) And 
+[c47d240](https://github.com/ChisanaKita/AIWAZ/commit/c47d240c7ccd9976565667beaed47e78469a13e7)
