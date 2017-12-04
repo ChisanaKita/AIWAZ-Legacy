@@ -58,5 +58,6 @@ message.channel.send({embed}).then(function (message){
     })
     setTimeout(function () {
       client.removeAllListeners('messageReactionAdd');
+      message.channel.send("Run Time Over");
     },12000);
 }
