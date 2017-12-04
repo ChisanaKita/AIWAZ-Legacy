@@ -1,7 +1,7 @@
 exports.run = (client, message, args) => {
   message.delete();
   
-  regex = new RegExp("^[0-9]");
+  regex = new RegExp("^\d");
   let question = args.join(' ');
 
   if(question.test(regex)){
