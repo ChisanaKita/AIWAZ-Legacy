@@ -12,7 +12,7 @@ exports.run = (client, message, args) => {
       message.channel.send(`⚠️Error : ${error.message}`);
     }
   }else{
-    message.channel.send("Please Don't Input String, I Know You See Me Using Eval()", {code: 'js'});
+    message.channel.send("Please Don't Input String, I Know You See Me Using eval()", {code: 'js'});
   }
   
 
