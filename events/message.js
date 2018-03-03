@@ -9,7 +9,7 @@ module.exports = message => {
 	const client = message.client;
 	let args = message.content.split(' ');
 	const command = args.shift().slice(prefix.length).toLowerCase();
-	const guild = client.guilds.find("name", "FS113341A/3A");
+	const guild = client.guilds.get('179445290795794432');
 
 if (message.guild.iconURL()) {
 	var guild_icon = message.guild.iconURL();
