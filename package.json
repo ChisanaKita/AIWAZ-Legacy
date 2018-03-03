@@ -4,6 +4,7 @@
   "description": "AIwaz By.ChisanaKita",
   "main": "bot.js",
   "scripts": {
+    "test" : "",
     "heroku-prebuild": "npm install --only=dev"
   },
   "author": "ChisanaKita",
