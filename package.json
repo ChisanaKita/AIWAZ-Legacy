@@ -4,8 +4,7 @@
   "description": "AIwaz By.ChisanaKita",
   "main": "bot.js",
   "scripts": {
-    "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false; export NODE_ENV=; NPM_CONFIG_PRODUCTION=false NODE_ENV=development npm install --only=dev --dev",
-    "heroku-postbuild": "export NPM_CONFIG_PRODUCTION=true; export NODE_ENV=production;",
+    "heroku-prebuild": "npm install --only=dev"
   },
   "author": "ChisanaKita",
   "license": "MIT",
