@@ -9,7 +9,7 @@
   "author": "XiaoBei",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "github:discordjs/discord.js",
+    "discord.js": "discordjs/discord.js",
     "math.js": "^1.1.43",
     "moment-timezone": "^0.5.14",
     "node-osu": "^1.3.0"
