@@ -19,8 +19,8 @@
 - Change: Guild.member.join Behavior (`skill.js`, `30624700.js`, `help-guild.js`).
 - Change: `cal.js` Now Using `Math.js` To Calculate Instead Of Using `eval()`.
 - Change: `clean.js`
-> Added An Event: `messageDeleteBulk` For Display How Many Messages Has Been Deleted.<br>
-Now You Can Delete Specified User's Message.(If No User Input, Will Delete The BOT Message.)
+> Added An Event: `messageDeleteBulk` To Display How Many Messages Has Been Deleted.<br>
+Now You Can Delete Specified User's Messages.(If No User Input, Will Delete The BOT Messages.)
 - Change: `coin.js` Finally Finished This Stupid Game.
 - Change: `help.js` Now Will Send The Command List To Your DM Instead Of Sending To The Input Channel.
 - Change: `register.js` Renamed To 'reg.js' For Easier Input.
