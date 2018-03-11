@@ -4,9 +4,9 @@
 </div>
 </body>
 
-#      Project·DRAGON エイワズ(AIwaz) Angel of Science
+#        Project·DRAGON エイワズ(AIwaz) Angel of Science
 > Magic Side : [Index-Project](https://github.com/STARLITENAMO/Index-Project)
-## UPDATE VERSION TO ( 0.14.0 ) | S.Y.S.T.E.M 2.0 (2017/10/07 00:32)
+## UPDATE VERSION TO ( 0.14.0 ) | S.Y.S.T.E.M 2.0 (2018/03/11 10:32)
 - Added: `manage.js`
 > Integrated Deaf/Undeaf, Kick And Ban Function To Manage Server Members.
 - Added: `manageaction.js` To Execute The Above Three Functions.
@@ -15,11 +15,12 @@
 - Added: `run.js`
 - Added: `30624700.js` To Handling The Guild.member.join Function.
 - Change: `message.js`
-> Use Embed Message For Logging. Including The Guild Icon & The Message Channel
+> Use An Embed Message To Log Down The Message Data, Including The Guild Icon & The Message Channel
+Now All User Input Will Convert To Lower Case, Which Means Case Dosen't Matter.
 - Change: Guild.member.join Behavior (`skill.js`, `30624700.js`, `help-guild.js`).
 - Change: `cal.js` Now Using `Math.js` To Calculate Instead Of Using `eval()`.
 - Change: `clean.js`
-> Added An Event: `messageDeleteBulk` To Display How Many Messages Has Been Deleted.<br>
+> Added Event: `messageDeleteBulk` To Display How Many Messages Has Been Deleted.<br>
 Now You Can Delete Specified User's Messages.(If No User Input, Will Delete The BOT Messages.)
 - Change: `coin.js` Finally Finished This Stupid Game.
 - Change: `help.js` Now Will Send The Command List To Your DM Instead Of Sending To The Input Channel.
