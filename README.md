@@ -29,6 +29,7 @@ Now You Can Delete Specified User's Messages.(If No User Input, Will Delete The 
 - Delete: `kick.js` (Integrated To `manage.js`).
 - Delete: `status.js`
 - Fix: Syntax Error.
-- Added/Change: package.json:  `discord.js` => (Master), `math.js` => ^1.1.43, `moment-timezone` => ^0.5.14
+- Added/Change: package.json:  `discord.js` => (Master), `mathjs` => ^4.0.0, `moment-timezone` => ^0.5.14
+> I Realize That I've Installing The Wrong `mathjs`...(The Correct Name Is `mathjs` Not `math.js`.)
 - Change: Client Version To : 0.14.0
 > For More Info, Please See [Version 0.14 All Commits](https://github.com/ChisanaKita/AIWAZ/commits/0.14)
