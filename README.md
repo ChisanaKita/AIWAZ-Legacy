@@ -63,3 +63,4 @@
 - Change: Client Version To : 0.13.28
 > See commit [83b9829](https://github.com/ChisanaKita/AIWAZ/commit/83b9829b526fdf83211c1337b2bba3d42d60bd20) And 
 [c47d240](https://github.com/ChisanaKita/AIWAZ/commit/c47d240c7ccd9976565667beaed47e78469a13e7)
+# v0.13 Will No Longer Update, The Next Update Will Be 0.14.0 (Unless There's A Major Security Update)
