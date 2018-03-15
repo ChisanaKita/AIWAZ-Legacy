@@ -18,7 +18,7 @@
 > Use an embed message to log down the message data, including the guild icon & the message channel<br>
 Now all user input will convert to lower case, Which means case dosen't matter.
 - Change: Guild.member.join Event Behavior (`skill.js`, `30624700.js`, `help-guild.js`).
-- Change: `cal.js` Now using `mathjs` to calculate instead df using `eval()`.
+- Change: `cal.js` Now using `mathjs` to calculate instead of using `eval()`.
 - Change: `clean.js`
 > Added event: `messageDeleteBulk` to display how many messages has been deleted.<br>
 Now you can delete specified user's messages.(If no user detected, will delete the BOT messages.)
