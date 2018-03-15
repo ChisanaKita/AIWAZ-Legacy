@@ -6,7 +6,7 @@
 
 #        Project·DRAGON エイワズ(AIwaz) Angel of Science
 > Magic Side : [Index-Project](https://github.com/STARLITENAMO/Index-Project)
-## UPDATE VERSION TO ( 0.14.0 ) | S.Y.S.T.E.M 2.0 (2018/03/11 10:32)
+## UPDATE VERSION TO ( Pre.0.14 ) | S.Y.S.T.E.M 2.0 (2018/03/11 10:32)
 - Added: `manage.js`
 > Integrated Deaf/Undeaf, Kick and Ban function to manage server members.
 - Added: `manageaction.js` to execute the above three functions.
