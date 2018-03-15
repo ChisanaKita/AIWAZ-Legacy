@@ -8,29 +8,29 @@
 > Magic Side : [Index-Project](https://github.com/STARLITENAMO/Index-Project)
 ## UPDATE VERSION TO ( 0.14.0 ) | S.Y.S.T.E.M 2.0 (2018/03/11 10:32)
 - Added: `manage.js`
-> Integrated Deaf/Undeaf, Kick And Ban Function To Manage Server Members.
-- Added: `manageaction.js` To Execute The Above Three Functions.
-- Added: `help-guild.js` Similar To `help.js` But It Is A Guild Version.
+> Integrated Deaf/Undeaf, Kick and Ban function to manage server members.
+- Added: `manageaction.js` to execute the above three functions.
+- Added: `help-guild.js` Similar to `help.js` but it's a guild version.
 - Added: `os.js`
 - Added: `run.js`
-- Added: `30624700.js` To Handling The Guild.member.join Function.
+- Added: `30624700.js` to handle the guild.member.join event.
 - Change: `message.js`
-> Use An Embed Message To Log Down The Message Data, Including The Guild Icon & The Message Channel
-Now All User Input Will Convert To Lower Case, Which Means Case Dosen't Matter.
-- Change: Guild.member.join Behavior (`skill.js`, `30624700.js`, `help-guild.js`).
-- Change: `cal.js` Now Using `Math.js` To Calculate Instead Of Using `eval()`.
+> Use an embed message to log down the message data, including the guild icon & the message channel<br>
+Now all user input will convert to lower case, Which means case dosen't matter.
+- Change: Guild.member.join Event Behavior (`skill.js`, `30624700.js`, `help-guild.js`).
+- Change: `cal.js` Now using `mathjs` to calculate instead df using `eval()`.
 - Change: `clean.js`
-> Added Event: `messageDeleteBulk` To Display How Many Messages Has Been Deleted.<br>
-Now You Can Delete Specified User's Messages.(If No User Input, Will Delete The BOT Messages.)
-- Change: `coin.js` Finally Finished This Stupid Game.
-- Change: `help.js` Now Will Send The Command List To Your DM Instead Of Sending To The Input Channel.
-- Change: `register.js` Renamed To 'reg.js' For Easier Input.
-- Change: `reload.js` Now The Function Is Back In This File.
-- Delete: `Aiwaz.js` & `Aiwaz-os.js` (Integrated To `os.js`).
-- Delete: `kick.js` (Integrated To `manage.js`).
+> Added event: `messageDeleteBulk` to display how many messages has been deleted.<br>
+Now you can delete specified user's messages.(If no user detected, will delete the BOT messages.)
+- Change: `coin.js` Finally finished this stupid game.
+- Change: `help.js` Now send the command list to your DM instead of sending to the message channel.
+- Change: `register.js` Renamed to 'reg.js' for easier input.
+- Change: `reload.js` Now the function is back in this file.
+- Delete: `Aiwaz.js` & `Aiwaz-os.js` (Integrated to `os.js`).
+- Delete: `kick.js` (Integrated to `manage.js`).
 - Delete: `status.js`
 - Fix: Syntax Error.
 - Added/Change: package.json:  `discord.js` => (Master), `mathjs` => ^4.0.0, `moment-timezone` => ^0.5.14
-> I Realize That I've Installing The Wrong `mathjs`...(The Correct Name Is `mathjs` Not `math.js`.)
+> I realize that I've installing the wrong `mathjs`...(The correct name is `mathjs` not `math.js`.)
 - Change: Client Version To : 0.14.0
 > For More Info, Please See [Version 0.14 All Commits](https://github.com/ChisanaKita/AIWAZ/commits/0.14)
