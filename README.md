@@ -16,12 +16,13 @@
 - Added: `30624700.js` to handle the guild.member.join event.
 - Change: `message.js`
 > Use an embed message to log down the message data, including the guild icon & the message channel<br>
-Now all user input will convert to lower case, Which means case dosen't matter.
+Now all user input will convert to lower case, Which means case dosen't matter.<br>
+New Function: Now type 'good bot' in a message channel can praise the BOT. (Planning to do more.)
 - Change: Guild.member.join Event Behavior (`skill.js`, `30624700.js`, `help-guild.js`).
 - Change: `cal.js` Now using `mathjs` to calculate instead of using `eval()`.
 - Change: `clean.js`
 > Added event: `messageDeleteBulk` to display how many messages has been deleted.<br>
-Now you can delete specified user's messages.(If no user detected, will delete the BOT messages.)
+Now you can delete specified user's messages. (If no user detected, will delete the BOT messages.)
 - Change: `coin.js` Finally finished this stupid game.
 - Change: `help.js` Now send the command list to your DM instead of sending to the message channel.
 - Change: `register.js` Renamed to 'reg.js' for easier input.
@@ -31,6 +32,6 @@ Now you can delete specified user's messages.(If no user detected, will delete t
 - Delete: `status.js`
 - Fix: Syntax Error.
 - Added/Change: package.json:  `discord.js` => (Master), `mathjs` => ^4.0.0, `moment-timezone` => ^0.5.14
-> I realize that I've installing the wrong `mathjs`...(The correct name is `mathjs` not `math.js`.)
+> I realize that I've installing the wrong `mathjs`... (The correct name is `mathjs` not `math.js`.)
 - Change: Client Version To : 0.14.0
 > For More Info, Please See [Version 0.14 All Commits](https://github.com/ChisanaKita/AIWAZ/commits/0.14)
