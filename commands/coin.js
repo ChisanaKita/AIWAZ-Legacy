@@ -14,13 +14,13 @@ exports.run = (client, message, args) => {
   }
 
   let embed = new Discord.MessageEmbed()
-      .setAuthor("🔷( - Game 🎮 Panel - )🔷")
-      .setTitle("COIN GAME!")
-      .setColor("#e91e63")
-      .addField("choose up", ":point_up_2: to choose up.", true)
-      .addField("choose down", ":point_down: to choose up.", true)
-      .addField("End Game", "💰 to end this game.", true)
-      .setFooter('Aiwaz ' + (version) + ' ©️ Copyright <2018> | <小北> ','https://i.imgur.com/Fta2jMg.jpg')
+    .setAuthor("🔷( - Game 🎮 Panel - )🔷")
+    .setTitle("COIN GAME!")
+    .setColor("#e91e63")
+    .addField("choose up", ":point_up_2: to choose up.", true)
+    .addField("choose down", ":point_down: to choose up.", true)
+    .addField("End Game", "💰 to end this game.", true)
+    .setFooter('Aiwaz ' + (version) + ' ©️ Copyright <2018> | <ChisanaKita> ','https://i.imgur.com/Fta2jMg.jpg')
   message.channel.send({embed}).then(async message => {
     await get_msg_id(message);
     await message.react("👆");
@@ -31,9 +31,10 @@ exports.run = (client, message, args) => {
   client.on('messageReactionAdd', (messageReaction, user) => {
     var x = Math.ceil(Math.random()*2);
     if (user.id != message.author.id) return;
-    if (messageReaction.emoji == '👆' && !user.bot) {
+    if (messageReaction.emoji.name == '👆' && !user.bot) {
       var c = '1';
-      //messageReaction.remove(user);    //waiting lib update
+      messageReaction.message.reactions.deleteAll();
+      //messageReaction._remove(user);    //waiting lib update
       if (x == c) {
         message.channel.send('You Won!!!').then(
           response => response.delete(2000));
@@ -46,7 +47,7 @@ exports.run = (client, message, args) => {
           // console.log(game_array);    //Debug
       }
     }
-    else if (messageReaction.emoji == '👇' && !user.bot) {
+    else if (messageReaction.emoji.name == '👇' && !user.bot) {
       var c = '2';
       //messageReaction.remove(user);    //waiting lib update
       if (x == c) {
@@ -61,7 +62,7 @@ exports.run = (client, message, args) => {
           // console.log(game_array);    //Debug
       }
     }
-    else if (messageReaction.emoji == '💰' && !user.bot) {
+    else if (messageReaction.emoji.name == '💰' && !user.bot) {
       endgame(user);    //Main function.
       //console.log(`end id func: ${id}`);    //Debug
       del_game_msg(message);    //Delete msg func
@@ -76,22 +77,24 @@ exports.run = (client, message, args) => {
     message.channel.messages.fetch(id).then(message => message.delete());
   }
   function endgame(user) {
+    let guild_nick_name;
     client.removeAllListeners('messageReactionAdd');
+    guild.member(user).nickname == null ? guild_nick_name = user.username : guild_nick_name = guild.member(user).nickname;
     let win = game_array.filter(game_array => game_array == '1');
     let lose = game_array.filter(game_array => game_array == '0');
-    let ratio = (win.length / game_array.length) * 100
+    let ratio = Math.ceil((win.length / game_array.length) * 100);
     //console.log(win);   //Debug
     //console.log(lose);  //Debug
     let embed = new Discord.MessageEmbed()
-        .setAuthor("📁(AIwaz - End Game Result -)📁", `${user.displayAvatarURL()}`)
-        .setColor("#e91e63")
-        .addField("Player :", `${guild.member(user).nickname}  (${user.username})`)
-        .addField("Total play(s) :", `${game_array.length} time(s)`, true)
-        .addField("Win(s) :", `${win.length} time(s)`, true)
-        .addField("Lose(s) :", `${lose.length} time(s)`, true)
-        .addField("Win ratio :", `${ratio}%`)
-        .addField("Debug :", `\`\`\`js\nGame {\n _data:\n  GameData {\n   Game_ID: '${id}',\n   Game_Data: [${game_array.toString()}],\n   Game_Name: 'coin' }\n  Player:\n   User {\n    '${user.id}' => [Object] } }\`\`\``)
-        .setFooter('Aiwaz ' + (version) + ' ©️ Copyright <2018> | <小北> ','https://i.imgur.com/Fta2jMg.jpg')
+      .setAuthor("📁(AIwaz - End Game Result -)📁", `${user.displayAvatarURL()}`)
+      .setColor("#e91e63")
+      .addField("Player :", `${guild_nick_name}  (${user.username})`)
+      .addField("Total play(s) :", `${game_array.length} time(s)`, true)
+      .addField("Win(s) :", `${win.length} time(s)`, true)
+      .addField("Lose(s) :", `${lose.length} time(s)`, true)
+      .addField("Win ratio :", `${ratio}% (corr. to the nearest integer)`)
+      .addField("Debug :", `\`\`\`js\nGame {\n _data:\n  GameData {\n   Game_ID: '${id}',\n   Game_Data: [${game_array.toString()}],\n   Game_Name: 'coin' }\n  Player:\n   User {\n    '${user.id}' => [Object] } }\`\`\``)
+      .setFooter('Aiwaz ' + (version) + ' ©️ Copyright <2018> | <ChisanaKita> ','https://i.imgur.com/Fta2jMg.jpg')
     return  message.channel.send({embed});
   }
 }
