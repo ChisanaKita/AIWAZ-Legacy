@@ -20,7 +20,7 @@
   > The purpose is to update those name so my bot won't get error each times he change somgthing.
 - Added: `np.js` 
   > "np" stand for "Now Playing", This command will only display user who is listening spotify.
-  > This command will show the following info: song name, artist, album img, album, spotify link, Google search for the song.
+  > This command will show the following info: song name, artist, album image, album, spotify link, Google search for the song.
 ***
 - Changed: `message.js`
   > Use an embed message to log down incoming action, including the guild icon & the message channel<br>
@@ -32,7 +32,7 @@ New Function: Now type 'good bot' in a message channel can praise the BOT. (Plan
   > Added event: `messageDeleteBulk` to display how many messages has been deleted.<br>
   Now you can delete specified user's messages. (If no user detected, will delete the BOT messages.)
 - Changed: `coin.js` Finally finished this stupid game.
-  > fixed End Game Result Panel don't have an user's guild nick name.
+  > fixed End Game Result Panel player don't have an user nick name.
 - Changed: `help.js` Now send the command list to your DM instead of sending to the message channel.
 - Changed: `register.js` Renamed to 'reg.js' for easier input.
 - Changed: `reload.js` Now the function is back in this file.
