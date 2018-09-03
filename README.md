@@ -35,7 +35,9 @@ New Function: Now type 'good bot' in a message channel can praise the BOT. (Plan
   > Fixed End Game Result Panel don't have a player's user nick name.
 - Changed: `help.js` Now send the command list to your DM instead of sending to the message channel.
 - Changed: `register.js` Renamed to 'reg.js' for easier input.
-- Changed: `reload.js` Now the function is back in this file.
+- Changed: `reload.js`.
+  > Now the function is back in this file.<br>
+  Also, now added a "all" parameter to reload all commands.
 - Changed: `osu.js` Fix the embed msg error.
 - Change: `help.txt` Added, updated and deleted a few things.
 ***
