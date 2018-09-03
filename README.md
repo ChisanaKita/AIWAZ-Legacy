@@ -32,7 +32,7 @@ New Function: Now type 'good bot' in a message channel can praise the BOT. (Plan
   > Added event: `messageDeleteBulk` to display how many messages has been deleted.<br>
   Now you can delete specified user's messages. (If no user detected, will delete the BOT messages.)
 - Changed: `coin.js` Finally finished this stupid game.
-  > fixed End Game Result Panel player don't have an user nick name.
+  > Fixed End Game Result Panel don't have a player's user nick name.
 - Changed: `help.js` Now send the command list to your DM instead of sending to the message channel.
 - Changed: `register.js` Renamed to 'reg.js' for easier input.
 - Changed: `reload.js` Now the function is back in this file.
