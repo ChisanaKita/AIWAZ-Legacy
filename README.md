@@ -10,7 +10,8 @@
 - Added: `manage.js`
   > Integrated Deaf/Undeaf, Kick and Ban function to manage server members.
 - Added: `manageaction.js` to execute the above three functions.
-- Added: `help-guild.js` Similar to `help.js` but it's a guild version.
+- Added: `help-guild.js`.
+  > Similar to `help.js` but it's a guild version.
 - Added: `os.js`.
 - Added: `run.js`.
 - Added: `30624700.js` to handle the guild.member.join event.
@@ -27,14 +28,17 @@
 Now all user input will convert to lower case.<br>
 New Function: Now type 'good bot' in a message channel can praise the BOT. (Planning to do more.)
 - Changed: Guild.member.join Event Behavior (`skill.js`, `30624700.js`, `help-guild.js`).
-- Changed: `cal.js` Now using `mathjs` to calculate instead of using `eval()`.
+- Changed: `cal.js`.
+  > Now using `mathjs` to calculate instead of using `eval()`.
 - Changed: `clean.js`.
   > Added event: `messageDeleteBulk` to display how many messages has been deleted.<br>
   Now you can delete specified user's messages. (If no user detected, will delete the BOT messages.)
 - Changed: `coin.js` Finally finished this stupid game.
   > Fixed End Game Result Panel don't have a player's user nick name.
-- Changed: `help.js` Now send the command list to your DM instead of sending to the message channel.
-- Changed: `register.js` Renamed to 'reg.js' for easier input.
+- Changed: `help.js`.
+  > Now send the command list to your DM instead of sending to the message channel.
+- Changed: `register.js`.
+  > Renamed to 'reg.js' for easier input.
 - Changed: `reload.js`.
   > Now the function is back in this file.<br>
   Also, now added a "all" parameter to reload all commands.
