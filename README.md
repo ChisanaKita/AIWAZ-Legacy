@@ -3,9 +3,8 @@
 <a href="https://github.com/ChisanaKita/AIWAZ"><img src="https://i.imgur.com/Fta2jMg.jpg" alt="AIwaz" /></a>
 </div>
 </body>
-
 #        Project·DRAGON エイワズ(AIwaz) Angel of Science
-> Magic Side : [Index-Project](https://github.com/STARLITENAMO/Index-Project)
+> Magic Side : [Index-Project](https://github.com/STARLITENAMO/Index-Projec
 ## UPDATE VERSION TO ( Pre.0.14 ) | S.Y.S.T.E.M 2.0 (2018/03/11 10:32 - 2018/**/**)
 - Added: `manage.js`
   > Integrated Deaf/Undeaf, Kick and Ban functions to manage server members.
