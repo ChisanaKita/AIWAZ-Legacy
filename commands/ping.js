@@ -13,9 +13,9 @@ exports.run = (client, message, args) => {
     emoji = '🖤';
   }
 
-  let embed = new Discord.RichEmbed()
+  let embed = new Discord.MessageEmbed()
 			.setTitle(`${message.author.username}   Pong! ${emoji}`)
 			.setColor("#e91e63")
 			.setFooter(pong + ' ms delay | AIwaz - PING Module -')
-			message.channel.send({embed});
+		message.channel.send({embed});
 }

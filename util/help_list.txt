@@ -1,0 +1,34 @@
+Command List
+============
+              👇(This is my bot "prefix")                  (This is optional)👇
+>>>[Usage](< aiwaz. > + "Command" + {SPACE} + [args / @user] + {SPACE} + <Parameter>)
+                                      ☝️ (Remember to SPACE BAR!) ☝️
+system class commands
+=====================
+[:warning:][S.Y.S.T.E.M administrators use ONLY]
+1.  <os        = 'Open AIwaz OS manual'>
+2.  <clean     = 'clean up the BOT/User message'>  [@user / null]
+3.  <manage    = 'Open up member managing panel'>  [@user] + <Reason>  (0.14 New Feature)
+4.  <reload    = 'Reload a command'>               [Command] / [all]
+5.  <restart   = 'Restart Aiwaz'>
+6.  <run       = 'Run a node.js script'>           [Command]
+7.  <update    = 'update roles and channels names'>
+
+Functional  commands
+====================
+1.  <binas     = 'Calculate 8-bit binary +/-'>     [bin num] (+/-) [bin num]
+2.  <c         = 'Send a C/C#/C++ code message'>   [Script]
+3.  <cal       = 'Calculate normal math'>          [normal math question]
+4.  <coin      = 'Start a coin game!'>
+5.  <conver    = 'Convert some number'>            [numbers] + <2,8,10,16> 👈(Input type)
+6.  <help      = 'Open the Help manual'>
+7.  <icon      = 'Show an user icon'>              [@user / null]
+8.  <info      = 'Show an user info'>              [@user / null]
+9.  <js        = 'Send a JavaScript code message'> [Script]
+10. <math-qe   = 'Calculate the x1 and x2'>        [num1 + num2 + num3]
+11. <np        = 'Show an user playing song info'> [@user / null]
+12. <osu       = 'Show an OSU user info'>          [OSU User Name]
+13. <pet       = 'pet AIwaz Or type: good bot'>
+14. <ping      = 'Ping AIwaz'>
+15. <py        = 'Send a Python code message'>     [Script]
+16. <ttt       = 'O & X game'>                     [@second player]

@@ -12,6 +12,6 @@ exports.run = (client, message, args) => {
       return;
   }
 
-  message.channel.send("```cs\n" + args.join(' ') + "```");
+  message.channel.send(args.join(' '), { code : 'C' });
 
 }

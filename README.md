@@ -1,66 +1,54 @@
 <body>
 <div>
-<a href="https://github.com/ChisanaKita/AIWAZ"><img src="https://i.imgur.com/Fta2jMg.jpg" alt="AIwaz" /></a><iframe src="https://discordapp.com/widget?id=191539621119655936&theme=dark" width="279" height="372" allowtransparency="true" frameborder="0"></iframe>
+<a href="https://github.com/ChisanaKita/AIWAZ"><img src="https://i.imgur.com/Fta2jMg.jpg" alt="AIwaz" /></a>
 </div>
 </body>
-
-#      Project·DRAGON エイワズ(AIwaz) Angel of Science
-> Magic Side : [Index-Project](https://github.com/STARLITENAMO/Index-Project)
-## UPDATE VERSION TO ( 0.13.0 ) | Server Builder (2017/10/07 00:32)
-> Now The Server owners Can Use Command `/install` To Automatically Build A World In DISCORD Using The (学園都市) Setting.
-- Added: install.js File To Process And Executing The Functions
-- Added: Permission Logic Gate To Block The Non-server owners Users To Use This Command
-- Change: Client Version To : 0.13.0<br>
-> For More Info, Please See [d10c9a0](https://github.com/XiaoBeiLab/AIWAZ/commit/d10c9a0dcfa5bdde45db7862767fe514d5be431b)
-## UPDATE VERSION TO (0.13.1) | Function Changes
-- Added: Roles (Level 0) To Arrays At: skill.js And install.js
-> See commit [a3fd5cb](https://github.com/ChisanaKita/AIWAZ/commit/a3fd5cb7bde0860d07349f5303e9e81697fb0bac) And [0ef76f6](https://github.com/ChisanaKita/AIWAZ/commit/0ef76f64e373e35a2674d1cdf14c83ffd4918e08)
-- Change: Client Version To : 0.13.1
->## Small Update (0.13.1a)
-- Added: Role (Level 6) To The Array At install.js
-- Change: Roles Name From (level x - XXXX TO XXXX - level x)
-> See commit [256bb66](https://github.com/ChisanaKita/AIWAZ/commit/256bb667596f9933ed6917447a64d72ff11d0a75) <br>
-> See commit [2645437](https://github.com/ChisanaKita/AIWAZ/commit/26454374ed77d524a9aaa5535dca29f45798eccd),[28c318c](https://github.com/ChisanaKita/AIWAZ/commit/28c318c8885843dbbd55f17c336307f0077e7b0b)
->>## Small Update (0.13.1b)
-- Added: English Title For Each Voice Channel And Text Channel.
-- Added: Mod Log Channel For My BOT. (ONLY)
-- Change: Default Channel Method
->> See commit [11f74c8](https://github.com/ChisanaKita/AIWAZ/commit/11f74c8be5f3365c45f7194d48e6ba2e64a271a4) <br>
->> See commit [3e87ae1](https://github.com/ChisanaKita/AIWAZ/commit/3e87ae14dc182d8f01ea4e9eee83b2892c95c77d)
-## UPDATE VERSION TO (0.13.2) | Script Fixing
-- Added: Poka-yoke System
-- Change: Move `mod-log` Channel To a Different Server
-- Change: Logged Data Type
-- Optimize Script
-- Change: Client Version To : 0.13.2
-> See commit [7d60880](https://github.com/ChisanaKita/AIWAZ/commit/7d6088004a41980ea50e6358a776629b564044d5) <br>
-> See commit [9a3ae3a](https://github.com/ChisanaKita/AIWAZ/commit/9a3ae3aec325a675817cde44472cc2ae871aab37) <br>
-> See commit [81a93af](https://github.com/ChisanaKita/AIWAZ/commit/81a93afe25376429aa095ab4161fd0d9b421345a)
-[6149154](https://github.com/ChisanaKita/AIWAZ/commit/61491541aeed2d2260c76dd5ffda53847202143b)
-[82d687c](https://github.com/ChisanaKita/AIWAZ/commit/82d687cd105af2323e51c6c5c2a3cc8f08eb6470)
-## UPDATE VERSION TO (0.13.8) | Function Change (2017/10/30 09:20) 
-- Added: External Array File `array.json`
-- Change: The install And uninstall Commands's Behavior <br>
-`Now Both Commands Share The Same Array File To Function`
-- Optimize Script
-- Change: Client Version To : 0.13.8
-> See commit [e9677b8](https://github.com/ChisanaKita/AIWAZ/commit/e9677b8ab295786873fc595d157000d496a556f5) <br>
-> See commit [7d60880](https://github.com/ChisanaKita/AIWAZ/commit/548ab573b64b71fae112b3ee7a0e732501357298)
-[d92cb12](https://github.com/ChisanaKita/AIWAZ/commit/d92cb128af864fa016c6522b985296f6ff9e6c03)
-## UPDATE VERSION TO (0.13.15) | Breaking Changes (2017/11/1 20:18)
-- Optimize: restart.js Using The `async/await` Method
-- Change: Token Will Not Be Stored In Main File
-- Add: token.json To Stored The BOT's Token
-- Change: Client Version To : 0.13.15
-> See commit [dd3ce88](https://github.com/ChisanaKita/AIWAZ/commit/dd3ce88c057addb12dd9f6452b635219cef62912)  And 
-[a752732](https://github.com/ChisanaKita/AIWAZ/commit/a75273223a973b5ab8d840b4cdafac723e65e7bc) <br>
-> See commit [8a92fe8](https://github.com/ChisanaKita/AIWAZ/commit/8a92fe8fcf175fdc05dce5123e96d3660a1fe904)
-## UPDATE VERSION TO (0.13.28) | Bug Fixing (2017/11/30 22:38)
-- Change: Restart Command 
-`Cause Heroku can't storge filesystem, So I put the whole function in the main file`
-- Change: `kick.js` get channel method
-- Delete: Useless Files
-- Change: Client Version To : 0.13.28
-> See commit [83b9829](https://github.com/ChisanaKita/AIWAZ/commit/83b9829b526fdf83211c1337b2bba3d42d60bd20) And 
-[c47d240](https://github.com/ChisanaKita/AIWAZ/commit/c47d240c7ccd9976565667beaed47e78469a13e7)
-# v0.13 Will No Longer Update, The Next Update Will Be 0.14.0 (Unless There's A Major Security Update)
+#        Project·DRAGON エイワズ(AIwaz) Angel of Science
+> Magic Side : [Index-Project](https://github.com/STARLITENAMO/Index-Projec
+## UPDATE VERSION TO ( Pre.0.14 ) | S.Y.S.T.E.M 2.0 (2018/03/11 10:32 - 2018/**/**)
+- Added: `manage.js`
+  > Integrated Deaf/Undeaf, Kick and Ban functions to manage server members.
+- Added: `manageaction.js` to execute the above three functions.
+- Added: `help-guild.js`.
+  > Similar to `help.js` but it's a guild version.
+- Added: `os.js`.
+- Added: `run.js`.
+- Added: `30624700.js` to handle the (guild.member.join) event.
+- Added: `pet.js`.
+- Added: `update.js` to sync up the channels and roles name.
+  > This feature is for my friend's guild only.<br>
+    The purpose is to update those names so my bot won't get error each times he change somgthing.
+- Added: `np.js`.
+  > "np" stand for "Now Playing", This command will only exectue when user is listening spotify.<br>
+  This command will show the following info: song name, artist, album image, album, spotify link, Google search for the song.
+***
+- Changed: `message.js`.
+  > Use an embed message to log down incoming action, including the guild icon & the message channel.<br>
+    Now all user input will convert to lower case.<br>
+    New Function: Now type 'good bot' in a message channel can praise my BOT. (Planning to do more.)
+- Changed: Guild.member.join Event Behavior (`skill.js`, `30624700.js`, `help-guild.js`).
+- Changed: `cal.js`.
+  > Now using `mathjs` to calculate instead of using `eval()`.
+- Changed: `clean.js`.
+  > Added event: `messageDeleteBulk` to display how many messages has been deleted.<br>
+    Now you can delete specified user's messages. (If no user detected, will delete the BOT messages.)
+- Changed: `coin.js` Finally finished this stupid game.
+  > Fixed End Game Result Panel don't have a player's user nick name.
+- Changed: `help.js`.
+  > Now send the command list to your DM instead of sending to the message channel.
+- Changed: `register.js`.
+  > Renamed to 'reg.js' for easier input.
+- Changed: `reload.js`.
+  > Now the function is back in this file.<br>
+    Also, now added a "all" parameter to reload all commands.
+- Changed: `osu.js` Fix the embed msg error.
+- Change: `help.txt` Added, updated and deleted a few things.
+***
+- Deleted: `Aiwaz.js` & `Aiwaz-os.js`. (Integrated to `os.js`).
+- Deleted: `kick.js`. (Integrated to `manage.js`).
+- Deleted: `status.js`.
+- Fixed: Syntax Error.
+- Added/Changed: package.json:  `discord.js` => (Master), `mathjs` => ^4.0.0, `moment-timezone` => ^0.5.14
+  > I realize that I've installing the wrong `mathjs`... (The correct name is `mathjs` not `math.js`.)
+- Changed: Client Version To : 0.14.0
+  > For More Info, Please See [Version 0.14 All Commits](https://github.com/ChisanaKita/AIWAZ/commits/0.14)

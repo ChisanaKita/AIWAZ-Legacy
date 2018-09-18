@@ -27,16 +27,22 @@ if (g_channels) {
   g_channels.delete();
 };
 
+guild.createChannel('TextChannel', 'category');
+guild.createChannel('VoiceChannel', 'category');
 
 setTimeout(function () {
   //TextChannel
     for (let i = 0; i < vn.TextChannel.length; i++) {
-      guild.createChannel(vn.TextChannel[i], 'text');
+      guild.createChannel(vn.TextChannel[i], 'text').then(
+        textchannel => textchannel.setParent(guild.channels.find('name', 'TextChannel'))
+      );
     };
 
   //VoiceChannel
     for (let i = 0; i < vn.VoiceChannel.length; i++) {
-      guild.createChannel(vn.VoiceChannel[i], 'voice');
+      guild.createChannel(vn.VoiceChannel[i], 'voice').then(
+        voicechannel => voicechannel.setParent(guild.channels.find('name', 'VoiceChannel'))
+      );
     };
 
   //Roles

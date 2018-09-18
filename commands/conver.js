@@ -8,11 +8,11 @@ exports.run = (client, message, args) => {
 
 /*
 Logic Gate
-  depending on the x (args[1] or the number type), diffent number do diffent thing.
-    if the x is '2', then set result equal to (The input number conver into DEX).
-    if the x is '8', then set result equal to (The input number conver into DEX).
+  depending on the x (args[1] or the number type), different number do different thing.
+    if the x is '2', then set result equal to (The input number convert into DEX).
+    if the x is '8', then set result equal to (The input number convert into DEX).
     if the x is '10', then set result equal to input number (DEX).
-    if the x is '16', then set result equal to (The input number conver into DEX).
+    if the x is '16', then set result equal to (The input number convert into DEX).
 */
   switch(x)
   {
@@ -22,18 +22,18 @@ Logic Gate
     case '16' : var result = parseInt(input, 16);break;
   }
 
-  let bin = result.toString(2);   //conver the result (DEX) to Binary.
-  let oct = result.toString(8);   //conver the result (DEX) to Octet.
+  let bin = result.toString(2);   //convert the result (DEX) to Binary.
+  let oct = result.toString(8);   //convert the result (DEX) to Octet.
   let dec = result;               //The result (DEX)
-  let hax = result.toString(16);  //conver the result (DEX) to Hexadecimal.
+  let hax = result.toString(16);  //convert the result (DEX) to Hexadecimal.
 
   //console.log(hax);  //For debug
 
-//process the result and send it
-  let embed = new Discord.RichEmbed()
-      .setAuthor('(AIwaz - Converter Module -)', `${message.author.avatarURL}`)
+  //process the result and send it
+  let embed = new Discord.MessageEmbed()
+      .setAuthor('(AIwaz - converter Module -)', `${message.author.displayAvatarURL()}`)
       .setColor("#e91e63")
       .setDescription(`BIN : ${bin}\nOCT : ${oct}\nDEC : ${dec}\nHAX : ${hax}`) //ans
-      .setFooter('御坂網絡 ' + (version) + ' ©️ Copyright <2017> | <小北> ','https://i.imgur.com/Fta2jMg.jpg')
+      .setFooter('Aiwaz ' + (version) + ' ©️ Copyright <2018> | <小北> ','https://i.imgur.com/Fta2jMg.jpg')
       message.channel.send({embed});
 }

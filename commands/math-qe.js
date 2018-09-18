@@ -18,11 +18,11 @@ exports.run = (client, message, args) => {
 
   //console.log(FindX(a, b, c, result));  //For debug
 
-  let embed = new Discord.RichEmbed()
-      .setAuthor('(AIwaz - Math-QE Module -)', `${message.author.avatarURL}`)
+  let embed = new Discord.MessageEmbed()
+      .setAuthor('(AIwaz - Math-QE Module -)', `${message.author.displayAvatarURL()}`)
       .setColor("#e91e63")
       .setTitle(`QE ${a} ${b} ${c} ans : `) //ans
       .setDescription(FindX(a, b, c, result))
-      .setFooter('御坂網絡 ' + (version) + ' ©️ Copyright <2017> | <小北> ','https://i.imgur.com/Fta2jMg.jpg')
+      .setFooter('Aiwaz ' + (version) + ' ©️ Copyright <2018> | <小北> ','https://i.imgur.com/Fta2jMg.jpg')
       message.channel.send({embed});
 }

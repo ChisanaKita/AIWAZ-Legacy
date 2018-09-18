@@ -1,13 +1,13 @@
 const fs = require('fs');
-exports.run = (client, message, args) => {
-  message.delete();
+exports.run = (client, member) => {
+  let guild = member.guild;
 
   fs.readFile('./util/help_list.txt', (error, data) => {
     if (error) {
       if (error.code = 'ENOENT') console.log('path error.');
       return;
     }
-    message.author.send(`${data}`, {code : 'md'});
-    message.channel.send('The Help-List was sent to your DM');
+    member.send(`${data}`, {code : 'md'});
+    guild.channels.find('type', 'text').send('The help list has sent to your DM.');
   });
 }
