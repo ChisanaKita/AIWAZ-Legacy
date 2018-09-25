@@ -3,7 +3,6 @@ const client = new Discord.Client();
 const version = require('./package.json').version;
 require('./util/eventLoader')(client);
 const Token = process.env.BOT_TOKEN;
-const fs = require('fs');
 const moment = require('moment-timezone');
 const d = new Date();
 const timeout = ms => new Promise(res => setTimeout(res, ms));
