@@ -1,22 +1,17 @@
 const Discord = require('discord.js');
 const version = require('../package.json').version;
-// const http = require('http');
-// const fs = require('fs');
-// const old_array = require("../util/array.json");
 exports.run = (client, message, args) => {
   message.delete();
-  //defined 'guild'
   let guild = message.guild;
   var user;
   args == '' ? user = message.author : user = message.mentions.users.first();
 
   let activity = guild.member(user).presence.activity;
+  let user_activity_name = activity.name;
 
-  if (activity.name != "Spotify")  return;
+  if (user_activity_name != "Spotify")  return;
   if (guild.member(user).presence.status != 'online') return;
 
-  let user_activity_name = activity.name;
-  //let user_activity_type = activity.type;
   let user_now_listening = activity.details;
   let now_listening_artist = activity.state;
   let now_listening_link = activity.syncID;
