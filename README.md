@@ -20,7 +20,7 @@
   > This feature is for my friend's guild only.<br>
     The purpose is to update those names so my bot won't get error each times he change somgthing.
 - Added: `np.js`.
-  > "np" stand for "Now Playing", This command will only exectue when user is listening spotify.<br>
+  > "np" stands for : "Now Playing", This command will only been exectue when user is listening spotify.<br>
   This command will show the following info: song name, artist, album image, album, spotify link, Google search for the song.
 ***
 - Changed: `message.js`.
