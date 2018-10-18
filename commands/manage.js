@@ -3,7 +3,7 @@ const version = require('../package.json').version;
 exports.run = (client, message, args) => {
   message.delete();
 
-  if (!message.guild.member(message.author).permissions.has(("KICK_MEMBERS") || "BAN_MEMBERS")) return;
+  if (!message.guild.member(message.author).permissions.has(("KICK_MEMBERS") || ("BAN_MEMBERS")) return;
 
   let z = message.mentions.users.first();
   var message_id = {};
