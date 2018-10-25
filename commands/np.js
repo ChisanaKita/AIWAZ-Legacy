@@ -7,10 +7,10 @@ exports.run = (client, message, args) => {
   args == '' ? user = message.author : user = message.mentions.users.first();
 
   let activity = guild.member(user).presence.activity;
-  let user_activity_name = activity.name;
-
-  if (user_activity_name != "Spotify")  return;
+  
   if (guild.member(user).presence.status != 'online') return;
+  activity.name == NULL ? let user_activity_name = activity.name : return;
+  if (user_activity_name != "Spotify")  return;
 
   let user_now_listening = activity.details;
   let now_listening_artist = activity.state;
