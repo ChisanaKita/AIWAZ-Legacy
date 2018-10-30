@@ -3,13 +3,12 @@ const version = require('../package.json').version;
 exports.run = (client, message, args) => {
   message.delete();
   let guild = message.guild;
-  var user;
-  args == '' ? user = message.author : user = message.mentions.users.first();
+  var user = (args == '') ? message.author : message.mentions.users.first();
 
   let activity = guild.member(user).presence.activity;
 
   if (guild.member(user).presence.status != 'online') return;
-  let user_activity_name = activity.name == NULL ? activity.name : return;
+  let user_activity_name = (activity != null) ? activity.name : '';
   if (user_activity_name != "Spotify")  return;
 
   let user_now_listening = activity.details;
