@@ -1,12 +1,12 @@
 {
   "name": "AIwaz",
   "version": "0.14.0",
-  "description": "XAT_AIwaz",
+  "description": "AIwaz",
   "main": "bot.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "test": ""
   },
-  "author": "XiaoBei",
+  "author": "ChisanaKita",
   "license": "MIT",
   "dependencies": {
     "discord.js": "github:discordjs/discord.js",
